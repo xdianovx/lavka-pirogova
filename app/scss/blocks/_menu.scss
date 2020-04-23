@@ -1,0 +1,25 @@
+.menu {
+
+  background-color: $gray-soft;
+  &__nav {
+    height: 78px;
+
+  }
+
+  &__ul {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link  {
+    font-family: 'Golos Text';
+    font-weight: 500;
+    font-size: 26px;
+    color: $gray-captions;
+    &:hover {
+      color: $black;
+    }
+  }
+}
