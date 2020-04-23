@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Golos Text';
+  src: local('../fonts/Golos Text Bold'), local('../fonts/Golos-Text-Bold'),
+  url('../fonts/GolosText-Bold.woff2') format('woff2'),
+  url('../fonts/GolosText-Bold.woff') format('woff'),
+  url('../fonts/GolosText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Golos Text';
+  src: local('../fonts/GolosText-DemiBold'), local('../fonts/GolosText-DemiBold'),
+  url('../fonts/GolosText-DemiBold.woff2') format('woff2'),
+  url('../fonts/GolosText-DemiBold.woff') format('woff'),
+  url('../fonts/GolosText-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Golos Text';
+  src: local('../fonts/Golos Text Medium'), local('../fonts/Golos-Text-Medium'),
+  url('../fonts/GolosText-Medium.woff2') format('woff2'),
+  url('../fonts/GolosText-Medium.woff') format('woff'),
+  url('../fonts/GolosText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Golos Text';
+  src: local('../fonts/Golos Text Regular'), local('../fonts/Golos-Text-Regular'),
+  url('../fonts/GolosText-Regular.woff2') format('woff2'),
+  url('../fonts/GolosText-Regular.woff') format('woff'),
+  url('../fonts/GolosText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Renault Life';
+  src: local('../fonts/Renault Life Bold'), local('../fonts/Renault-Life-Bold'),
+  url('../fonts/RenaultLife-Bold.woff2') format('woff2'),
+  url('../fonts/RenaultLife-Bold.woff') format('woff'),
+  url('../fonts/RenaultLife-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Renault Life';
+  src: local('../fonts/Renault Life Regular'), local('../fonts/Renault-Life-Regular'),
+  url('../fonts/RenaultLife.woff2') format('woff2'),
+  url('../fonts/RenaultLife.woff') format('woff'),
+  url('../fonts/RenaultLife.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco(SF UI)';
+  src: local('../fonts/San Francisco(SF UI) Text Bold'), local('../fonts/San-Francisco(SF-UI)-Text-Bold'),
+  url('../fonts/SFUIText-Bold.woff2') format('woff2'),
+  url('../fonts/SFUIText-Bold.woff') format('woff'),
+  url('../fonts/SFUIText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco(SF UI)';
+  src: local('../fonts/San Francisco(SF UI) Text Light'), local('../fonts/San-Francisco(SF-UI)-Text-Light'),
+  url('../fonts/SFUIText-Light.woff2') format('woff2'),
+  url('../fonts/SFUIText-Light.woff') format('woff'),
+  url('../fonts/SFUIText-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco(SF UI)';
+  src: local('../fonts/San Francisco(SF UI) Text Medium'), local('../fonts/San-Francisco(SF-UI)-Text-Medium'),
+  url('../fonts/SFUIText-Medium.woff2') format('woff2'),
+  url('../fonts/SFUIText-Medium.woff') format('woff'),
+  url('../fonts/SFUIText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco(SF UI)';
+  src: local('../fonts/San Francisco(SF UI) Text Regular'), local('../fonts/San-Francisco(SF-UI)-Text-Regular'),
+  url('../fonts/SFUIText-Regular.woff2') format('woff2'),
+  url('../fonts/SFUIText-Regular.woff') format('woff'),
+  url('../fonts/SFUIText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco(SF UI)';
+  src: local('../fonts/San Francisco(SF UI) Text Semibold'), local('../fonts/San-Francisco(SF-UI)-Text-Semibold'),
+  url('../fonts/SFUIText-Semibold.woff2') format('woff2'),
+  url('../fonts/SFUIText-Semibold.woff') format('woff'),
+  url('../fonts/SFUIText-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
