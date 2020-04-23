@@ -1,9 +1,52 @@
 body {
-  font-family: 'Renault Life';
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: $gray-maintext;
+}
 
+a {
+  text-decoration: none;
+  color: $black;
 }
 
 h1 {
   font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+
+.whatsapp {
+  position: relative;
+  border: 1px solid #0DC143;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 12px 41px 12px 13px;
+  margin-left: 24px;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 21px;
+    top: 14px;
+    right: 10px;
+    background-image: url('../img/wa.svg');
+
+  }
+
+}
+
+.telegram {
+  color: $white;
+  padding: 12px 13px;
+  border-radius: 12px;
+  background: #419FD9;
+  margin-left: 24px;
 }

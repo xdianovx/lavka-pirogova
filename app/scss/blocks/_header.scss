@@ -1,0 +1,54 @@
+.header {
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    img {
+      height: 66px;
+    }
+    &_text {
+      margin-left: 73px;
+      width: 318px;
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0;
+        color: $black;
+      }
+      p span {
+        font-family: 'Golos Text';
+        color: $gray-captions;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__phone {
+    color: $black;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 40px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 0;
+      left: 0;
+      background-image: url('../img/phone.svg');
+      
+    }
+  }
+}
