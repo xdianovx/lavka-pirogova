@@ -1,0 +1,39 @@
+.franchisee {
+    margin-top: 163px;
+
+    h3 {
+        width: 900px;
+    }
+    p {
+        margin-top: 36px;
+        font-size: 26px;
+        line-height: 150%;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        border-radius: 12px;
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 24px;
+        max-width: 448px;
+    }
+
+    &__info {
+        border-left: 1px solid #E6E1E5;
+        border-right: 1px solid #E6E1E5;
+        border-bottom: 1px solid #E6E1E5;
+        padding: 25px;
+        box-sizing: border-box;
+        border-radius: 0 0 12px 12px;
+
+        p {
+            margin: 0px;
+        }
+    }
+}
