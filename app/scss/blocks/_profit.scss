@@ -1,0 +1,42 @@
+.profit {
+  background: #F3F3F5;
+  height: 728px;
+  margin-top: 137px;
+  h3 {
+    width: 700px;
+  }
+  p {
+    margin-top: 36px;
+    font-size: 26px;
+    line-height: 150%;
+    color: $black-header;
+    width: 534px;
+  }
+  &__wrap {
+    padding-top: 107px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 50%;
+    &_bottom {
+      margin-top: 156px;
+    }
+  }
+
+  &__right {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 150px;
+    p {
+      margin: 0;
+      font-size: 24px;
+      width: 390px;
+    }
+
+    &_item {
+      margin-bottom: 22px;
+    }
+  }
+}
