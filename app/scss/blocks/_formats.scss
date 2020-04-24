@@ -1,0 +1,80 @@
+.formats {
+    margin-top: 107px;
+
+    &__item {
+        margin-top: 64px;
+        display: flex;
+
+
+        &_left {
+            display: flex;
+            width: 519px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+
+        &_right {
+            width: 700px;
+            margin-left: 64px;
+
+            p {
+                margin-top: 21px;
+                font-size: 26px;
+                line-height: 150%;
+
+            }
+
+            &_info {
+                display: flex;
+                margin-top: 26px;
+
+                h4 {
+                    margin-right: 50px;
+                }
+
+                span {
+                    font-weight: 500;
+                    display: block;
+                    color: $gray-captions;
+                    font-size: 26px;
+                }
+            }
+
+            button {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    &__badge {
+
+        border: 1px solid #FFA626;
+        box-sizing: border-box;
+        box-shadow: 0px 18px 36px rgba(54, 49, 53, 0.1), 0px 0px 4px rgba(54, 49, 53, 0.15);
+        border-radius: 12px;
+        margin-top: 32px;
+        p {
+            font-size: 24px;
+            line-height: 29px;
+            padding: 25px 75px;
+            margin: 0;
+            color: $black-header;
+        }
+        a {
+            text-decoration: underline;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                right: -50px;
+                height: 23px;
+                width: 15px;
+                background-image: url('../img/more-arrow.svg');
+            }
+        }
+
+    }
+}
