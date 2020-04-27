@@ -1,6 +1,6 @@
 .franchisee {
     margin-top: 163px;
-
+    margin-bottom: 136px;
     h3 {
         width: 900px;
     }
@@ -36,4 +36,60 @@
             margin: 0px;
         }
     }
+
+    &__slider {
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+
+        &_wrap {
+            position: relative;
+        }
+    }
+
+}
+
+.franchisee__slider .slick-dots {
+    display: flex;
+    border: 1px solid #E6E1E5;
+    height: 75px;
+    border-radius: 0 0 12px 12px;
+}
+
+.franchisee__slider .slick-dots li {
+    width: 25%;
+    border-left: 1px solid #E6E1E5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.franchisee__slider .slick-dots li:first-child {
+    width: 25%;
+    border-left: none;
+}
+
+.franchisee__slider .slick-dots button {
+    border: none;
+    background-color: transparent;
+}
+
+#slick-1 .slick-dots li.slick-active,
+#slick-1 .slick-dots li:hover {
+    font-weight: 700;
+}
+
+.franchisee__pagination {
+    position: absolute;
+    bottom: 77px;
+    width: 100%;
+    height: 7px;
+    background: #eee;
+}
+.franchisee__pagination .franchise__progress {
+    width: 0%;
+    height: 7px;
+    background-color: $orange;
 }

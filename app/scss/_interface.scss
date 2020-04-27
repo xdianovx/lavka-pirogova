@@ -164,7 +164,7 @@ h2, h3, h4, h5, h6 {
 
 
 .formats__slider {
-
+  overflow: hidden;
   border-radius: 12px 12px 0 0;
   img {
     height: 100%;
