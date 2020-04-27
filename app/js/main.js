@@ -69,3 +69,12 @@ $(document).ready(function () {
     startProgressbar();
 });
 
+
+$(function() {
+    $(".vision-table__accordion > vision-table__accordion_item.is-active").children(".vision-table__accordion_panel").slideDown();
+
+    $(".vision-table__accordion > .vision-table__accordion_item").click(function() {
+        $(this).siblings(".vision-table__accordion_item").removeClass("is-active").children(".vision-table__accordion_panel").slideUp();
+        $(this).toggleClass("is-active").children(".vision-table__accordion_panel").slideToggle("ease-out");
+    });
+});
