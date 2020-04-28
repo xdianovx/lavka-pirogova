@@ -105,7 +105,6 @@
     &__wrap {
         margin-top: 50px;
         display: flex;
-        justify-content: space-between;
     }
 
     &__left {
@@ -115,8 +114,11 @@
         &_wrap {
             padding: 16px 40px;
             border: 1px solid #E6E1E5;
+            border-radius: 0 0 12px 12px;
+            margin-top: -7px;
             p {
                 margin: 0;
+
                 span {
                     color: $gray-captions;
                     font-size: 16px;
@@ -134,7 +136,7 @@
     &__right {
         margin-left: 50px;
         position: relative;
-        width: 780px;
+        width: 779px;
         &:before {
             position: absolute;
             content: '';
@@ -148,6 +150,14 @@
         p {
             margin: 0;
             padding-top: 79px;
+            font-size: 24px;
+            line-height: 150%;
         }
     }
+}
+
+.blog-franchisee__slider .slick-arrow {
+    top: 50px;
+    right: 50px;
+
 }
