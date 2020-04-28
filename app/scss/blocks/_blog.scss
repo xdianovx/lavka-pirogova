@@ -1,0 +1,153 @@
+.blog {
+    margin-top: 72px;
+
+
+    &__wrap {
+        margin-top: 44px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+
+    &__left {
+        width: 50%;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 528px;
+    }
+
+    &__right {
+        width: 50%;
+        margin-left: 50px;
+
+        p {
+            font-size: 24px;
+            line-height: 150%;
+        }
+
+        a {
+            position: relative;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+            margin-top: 50px;
+            display: inline-block;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 1px;
+                right: -34px;
+                width: 15px;
+                height: 24px;
+                background-image: url('../img/blof-arrow.svg');
+            }
+        }
+    }
+}
+
+.blog-second {
+    &__wrap {
+        display: flex;
+        border-top: 1px solid #DCDCDE;
+        padding-top: 64px;
+        align-items: flex-start;
+    }
+
+    &__left {
+        border-radius: 12px;
+        height: 204px;
+        overflow: hidden;
+        width: 447px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        width: 330px;
+        margin-left: 50px;
+    }
+
+    &__right {
+        width: 447px;
+        justify-self: right;
+        margin-left: auto;
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            position: relative;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+            display: inline-block;
+            margin-top: 36px;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 1px;
+                right: -34px;
+                width: 15px;
+                height: 24px;
+                background-image: url('../img/blof-arrow.svg');
+            }
+        }
+    }
+}
+
+.blog-franchisee {
+    margin-top: 163px;
+
+    &__wrap {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        border-radius: 12px;
+        overflow: hidden;
+
+        &_wrap {
+            padding: 16px 40px;
+            border: 1px solid #E6E1E5;
+            p {
+                margin: 0;
+                span {
+                    color: $gray-captions;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        img {
+            height: 320px;
+        }
+
+    }
+
+    &__right {
+        margin-left: 50px;
+        position: relative;
+        width: 780px;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 68px;
+            height: 42px;
+            background-image: url('../img/blog-quotes.svg');
+        }
+
+        p {
+            margin: 0;
+            padding-top: 79px;
+        }
+    }
+}

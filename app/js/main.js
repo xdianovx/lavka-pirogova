@@ -9,6 +9,7 @@ $(document).ready(function () {
         nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
     });
 
+
     var time = 10;
     var $bar,
         $slick,
@@ -19,7 +20,10 @@ $(document).ready(function () {
     $slick = $('.franchisee__slider');
     $slick.slick({
         draggable: true,
-        adaptiveHeight: false,
+        customPaging : function(slider, i) {
+            var title = $(slider.$slides[i]).find('[data-title]').data('title');
+            return '<a class="pager__item"> '+title+' </a>';
+        },
         dots: true,
         mobileFirst: true,
         pauseOnDotsHover: true,
@@ -78,3 +82,4 @@ $(function() {
         $(this).toggleClass("is-active").children(".vision-table__accordion_panel").slideToggle("ease-out");
     });
 });
+
