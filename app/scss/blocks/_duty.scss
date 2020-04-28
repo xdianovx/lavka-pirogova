@@ -1,0 +1,23 @@
+.duty {
+    margin-top: 136px;
+    height: 614px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__wrap {
+        padding-top: 107px;
+        h3 {
+            color: $white;
+            width: 950px;
+            margin-top: 10px;
+        }
+
+        p {
+            color: $white;
+            margin-top: 29px;
+            font-size: 26px;
+            line-height: 150%;
+        }
+    }
+}

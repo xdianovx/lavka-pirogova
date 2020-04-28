@@ -1,0 +1,53 @@
+.duty-target {
+    margin-top: 110px;
+
+    &__wrap {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    &__left {
+        width: 566px;
+        border-top: 1px solid $orange;
+        border-bottom: 1px solid $orange;
+        position: relative;
+        padding: 27px 0;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 62px;
+            height: 42px;
+            top: 44px;
+            left: -130px;
+            background-image: url('../img/duty-quotes.svg');
+        }
+
+        p {
+            font-size: 54px;
+            line-height: 140%;
+            margin: 0;
+            span {
+                font-weight: 700;
+                color: $black;
+            }
+        }
+    }
+
+    &__right {
+        width: 493px;
+        margin-left: 64px;
+        p {
+            font-size: 24px;
+            line-height: 150%;
+            color: $gray-maintext;
+            margin: 0;
+        }
+
+        h4 {
+            padding-top: 23px;
+            padding-top: 11px;
+        }
+    }
+}
