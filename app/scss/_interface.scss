@@ -125,7 +125,6 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-
 .slick-custom-next {
   width: 42px;
   height: 42px;
@@ -161,7 +160,6 @@ h2, h3, h4, h5, h6 {
     color: $black;
   }
 }
-
 
 .formats__slider {
   overflow: hidden;
@@ -217,3 +215,50 @@ h2, h3, h4, h5, h6 {
   right: 32px;
 }
 
+
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .telegram {
+    color: #fff;
+    padding: 12px 9px;
+    border-radius: 12px;
+    background: #419FD9;
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1054px;
+    margin: 0 auto;
+    padding: 01px 15px;
+  }
+
+  .whatsapp {
+    span {
+      display: none;
+    }
+  }
+
+  .telegram {
+    color: #fff;
+    border-radius: 12px;
+    background: #419FD9;
+    margin-left: 24px;
+    padding: 13px 35px;
+    span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px) {
+
+}

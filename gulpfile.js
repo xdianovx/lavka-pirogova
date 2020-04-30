@@ -14,11 +14,11 @@ gulp.task('clean', async function(){
 
 gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({outputStyle: 'expand'}))
     .pipe(autoprefixer({
       browsers: ['last 8 versions']
     }))
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({suffix: ''}))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}))
 });

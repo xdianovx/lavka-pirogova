@@ -1,13 +1,4 @@
 $(document).ready(function () {
-    $('.menu__burger').click(function(event){
-        $('.menu__burger, .menu__ul').toggleClass('active');
-        $('body').toggleClass('lock');
-    })
-
-});
-
-
-$(document).ready(function () {
     $('.unique__slider').slick({
         prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
         nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
