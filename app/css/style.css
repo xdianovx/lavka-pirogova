@@ -550,7 +550,7 @@ h2, h3, h4, h5, h6 {
 
 .telegram {
   color: #fff;
-  padding: 12px 13px;
+  padding: 13px 13px;
   border-radius: 12px;
   background: #419FD9;
   margin-left: 24px; }
@@ -1180,6 +1180,10 @@ h2, h3, h4, h5, h6 {
         width: 80%;
         font-family: 'Golos Text', sans-serif;
         margin: 0; }
+
+.sl-count__total {
+  color: #33312E !important;
+  font-weight: 500; }
 
 .formats {
   margin-top: 107px; }

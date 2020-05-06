@@ -8,11 +8,30 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('.unique__slider').slick({
+    var slider = $('.unique__slider').slick({
+
         speed: 500,
         prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
         nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
     });
+
+
+    $('.sl-count__total').text(slider.slick.slideCount);
+
+    slider.on('afterChange', function (event, slick, currentSlide) {
+        $(".sl-count__current").text(currentSlide + 1);
+
+    });
+
+
+
+
+
+
+
+
+
+
 
     $('.formats__slider').slick({
         prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
@@ -95,8 +114,5 @@ $(function () {
         $(this).toggleClass("is-active").children(".vision-table__accordion_panel").slideToggle("ease-out");
     });
 });
-
-
-
 
 
