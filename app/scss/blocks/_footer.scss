@@ -1,0 +1,43 @@
+.footer {
+  border-top: 1px solid #E6E1E5;
+  height: 120px;
+  margin-top: 192px;
+
+  &__wrap {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__adress {
+    h5 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: $black-header;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__policy {
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: $black-header;
+      margin-bottom: 6px;
+
+    }
+  }
+}
+
+.footer > .container {
+  height: 100%;
+}

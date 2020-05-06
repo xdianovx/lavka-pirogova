@@ -33,12 +33,18 @@
 
   &__right {
     margin-left: 50px;
+    position: relative;
+    button {
+      position: absolute;
+      bottom: 0;
+    }
   }
 }
 
 .questions__right_items {
   display: flex;
   justify-content: space-between;
+
 
   a{
     display: block;
@@ -53,6 +59,8 @@
     font-family: 'Golos Text', sans-serif;
     color: $gray-captions;
   }
+
+
 }
 
 .question__right_soc {
