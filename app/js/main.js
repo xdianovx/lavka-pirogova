@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.menu__burger').click(function(event){
+    $('.menu__burger').click(function (event) {
         $('.menu__burger, .menu__ul').toggleClass('active');
         $('body').toggleClass('lock');
     })
@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.unique__slider').slick({
+        speed: 500,
         prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
         nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
     });
@@ -33,9 +34,9 @@ $(document).ready(function () {
     $slick = $('.franchisee__slider');
     $slick.slick({
         draggable: true,
-        customPaging : function(slider, i) {
+        customPaging: function (slider, i) {
             var title = $(slider.$slides[i]).find('[data-title]').data('title');
-            return '<a class="pager__item"> '+title+' </a>';
+            return '<a class="pager__item"> ' + title + ' </a>';
         },
         dots: true,
         mobileFirst: true,
@@ -47,10 +48,10 @@ $(document).ready(function () {
     $bar = $('.franchisee__pagination .franchise__progress');
 
     $('.franchisee__slider_wrap').on({
-        mouseenter: function() {
+        mouseenter: function () {
             isPause = true;
         },
-        mouseleave: function() {
+        mouseleave: function () {
             isPause = false;
         }
     })
@@ -63,13 +64,12 @@ $(document).ready(function () {
     }
 
     function interval() {
-        if(isPause === false) {
-            percentTime += 1 / (time+0.1);
+        if (isPause === false) {
+            percentTime += 1 / (time + 0.1);
             $bar.css({
-                width: percentTime+"%"
+                width: percentTime + "%"
             });
-            if(percentTime >= 100)
-            {
+            if (percentTime >= 100) {
                 $slick.slick('slickNext');
                 startProgressbar();
             }
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     function resetProgressbar() {
         $bar.css({
-            width: 0+'%'
+            width: 0 + '%'
         });
         clearTimeout(tick);
     }
@@ -87,12 +87,16 @@ $(document).ready(function () {
 });
 
 
-$(function() {
+$(function () {
     $(".vision-table__accordion > vision-table__accordion_item.is-active").children(".vision-table__accordion_panel").slideDown();
 
-    $(".vision-table__accordion > .vision-table__accordion_item").click(function() {
+    $(".vision-table__accordion > .vision-table__accordion_item").click(function () {
         $(this).siblings(".vision-table__accordion_item").removeClass("is-active").children(".vision-table__accordion_panel").slideUp();
         $(this).toggleClass("is-active").children(".vision-table__accordion_panel").slideToggle("ease-out");
     });
 });
+
+
+
+
 

@@ -3,9 +3,48 @@
     height: 819px;
     margin-top: 136px;
     &__wrap {
+
         h3 {
             padding-top: 107px;
             width: 676px;
         }
+    }
+
+    &__slider {
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+    }
+}
+
+.stages-slider__wrap {
+    display: flex;
+    align-items: center;
+    height: 450px;
+    justify-content: space-between;
+
+}
+
+.stages__slider .slick-arrow {
+    display: none !important;
+}
+
+.stages__wrap_item {
+    height: 350px;
+    width: 310px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    img {
+        margin: 0 auto;
+    }
+    h5 {
+        font-family: 'Golos Text';
+        text-align: center;
+        font-size: 24px;
+        line-height: 160%;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+        color: $gray-captions;
     }
 }
