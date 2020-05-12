@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <!--header start-->
@@ -712,6 +714,7 @@
 
     <div class="franchisee__slider_wrap" id="slick-1">
         <p>Наша дружная команда Лавки Пирогова</p>
+
         <div class="franchisee__slider">
             <div class="slide" data-title="Фото 1_Краткое описание ">
                 <img src="img/team.jpg" alt="">
@@ -764,398 +767,843 @@
                 <h5>Сумма, ₽</h5>
                 <h5>% к выручке</h5>
             </div>
-            <div id="tab-nav">
-                <div class="vision-table__wrapper">
-                    <ul class="vision-table__accordion">
-                        <li class="vision-table__accordion_item is-active">
-                            <table>
-                                <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
-                                    <td class="vision-table__accordion_first vision-table__accordion_first-td">1. Общая
-                                        выручка
-                                        от продаж
-                                    </td>
-                                    <td>947 599</td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <div class="vision-table__accordion_panel">
+            <ul class="uk-tab vision-table__bottom" data-uk-tab="{connect:'#my-id'}">
+                <li><a href="#">Операционная прибыль</a></li>
+                <li><a href="#">Чистая прибыль</a></li>
+            </ul>
+
+
+            <ul id="my-id" class="uk-switcher">
+                <li>
+                    <div class="vision-table__wrapper">
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
                                 <table>
-                                    <tr class="vision-table__accordion_thumb ">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
-                                        <td>647 137</td>
-                                        <td>68,29</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
-                                        <td>32 281</td>
-                                        <td>3,41</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
-                                        <td>242 408</td>
-                                        <td>35,68</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100% Айко
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">1.
+                                            Общая
+                                            выручка
+                                            от продаж
                                         </td>
-                                        <td>223 285</td>
+                                        <td>947 599</td>
                                         <td></td>
                                     </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка уценка
-                                            Айко
-                                        </td>
-                                        <td>19 123</td>
-                                        <td></td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
-                                        <td>7 229</td>
-                                        <td>1,06</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний на обеды персонала</td>
-                                        <td>6 082</td>
-                                        <td>0,90</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
-                                        <td>1 147</td>
-                                        <td>0,17</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Общий расход на сырье Айко с учетом
-                                            списаний
-                                        </td>
-                                        <td>249 637</td>
-                                        <td>36,74</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость по суммовому учету</td>
-                                        <td></td>
-                                        <td>36,91</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации по
-                                            сырью
-                                            в
-                                            связке касса-кухня
-                                        </td>
-                                        <td>-2 859</td>
-                                        <td>-0,42</td>
-                                    </tr>
-
-
                                 </table>
-                            </div>
-                        </li>
-                    </ul>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
 
-                    <ul class="vision-table__accordion">
-                        <li class="vision-table__accordion_item is-active">
-                            <table>
-                                <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
-                                    <td class="vision-table__accordion_first vision-table__accordion_first-td">2.
-                                        Выручка
-                                        всех
-                                        категорий кроме "Выпечка" СП
-                                    </td>
-                                    <td>268 181</td>
-                                    <td>28,30</td>
-                                </tr>
-                            </table>
-                            <div class="vision-table__accordion_panel">
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
                                 <table>
-                                    <tr class="vision-table__accordion_thumb ">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
-                                        <td>647 137</td>
-                                        <td>68,29</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
-                                        <td>32 281</td>
-                                        <td>3,41</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
-                                        <td>242 408</td>
-                                        <td>35,68</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100% Айко
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">2.
+                                            Выручка
+                                            всех
+                                            категорий кроме "Выпечка" СП
                                         </td>
-                                        <td>223 285</td>
-                                        <td></td>
+                                        <td>268 181</td>
+                                        <td>28,30</td>
                                     </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка уценка
-                                            Айко
-                                        </td>
-                                        <td>19 123</td>
-                                        <td></td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
-                                        <td>7 229</td>
-                                        <td>1,06</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний на обеды персонала</td>
-                                        <td>6 082</td>
-                                        <td>0,90</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
-                                        <td>1 147</td>
-                                        <td>0,17</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Общий расход на сырье Айко с учетом
-                                            списаний
-                                        </td>
-                                        <td>249 637</td>
-                                        <td>36,74</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость по суммовому учету</td>
-                                        <td></td>
-                                        <td>36,91</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации по
-                                            сырью
-                                            в
-                                            связке касса-кухня
-                                        </td>
-                                        <td>-2 859</td>
-                                        <td>-0,42</td>
-                                    </tr>
-
-
                                 </table>
-                            </div>
-                        </li>
-                    </ul>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
 
-                    <ul class="vision-table__accordion">
-                        <li class="vision-table__accordion_item is-active">
-                            <table>
-                                <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
-                                    <td class="vision-table__accordion_first vision-table__accordion_first-td">3.
-                                        Выручка от
-                                        продаж "Выпечка" СП + "Слойка" СП
-                                    </td>
-                                    <td>679 418</td>
-                                    <td>71,70</td>
-                                </tr>
-                            </table>
-                            <div class="vision-table__accordion_panel">
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
                                 <table>
-                                    <tr class="vision-table__accordion_thumb ">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
-                                        <td>647 137</td>
-                                        <td>68,29</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
-                                        <td>32 281</td>
-                                        <td>3,41</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
-                                        <td>242 408</td>
-                                        <td>35,68</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100% Айко
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">3.
+                                            Выручка от
+                                            продаж "Выпечка" СП + "Слойка" СП
                                         </td>
-                                        <td>223 285</td>
-                                        <td></td>
+                                        <td>679 418</td>
+                                        <td>71,70</td>
                                     </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка уценка
-                                            Айко
-                                        </td>
-                                        <td>19 123</td>
-                                        <td></td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
-                                        <td>7 229</td>
-                                        <td>1,06</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний на обеды персонала</td>
-                                        <td>6 082</td>
-                                        <td>0,90</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
-                                        <td>1 147</td>
-                                        <td>0,17</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Общий расход на сырье Айко с учетом
-                                            списаний
-                                        </td>
-                                        <td>249 637</td>
-                                        <td>36,74</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость по суммовому учету</td>
-                                        <td></td>
-                                        <td>36,91</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации по
-                                            сырью
-                                            в
-                                            связке касса-кухня
-                                        </td>
-                                        <td>-2 859</td>
-                                        <td>-0,42</td>
-                                    </tr>
-
-
                                 </table>
-                            </div>
-                        </li>
-                    </ul>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
 
-                    <ul class="vision-table__accordion">
-                        <li class="vision-table__accordion_item is-active">
-                            <table>
-                                <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
-                                    <td class="vision-table__accordion_first vision-table__accordion_first-td">4.
-                                        Затраты
-                                        операционные постоянные*
-                                    </td>
-                                    <td>947 599</td>
-                                    <td>34,98</td>
-                                </tr>
-                            </table>
-                            <div class="vision-table__accordion_panel">
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
                                 <table>
-                                    <tr class="vision-table__accordion_thumb ">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
-                                        <td>647 137</td>
-                                        <td>68,29</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
-                                        <td>32 281</td>
-                                        <td>3,41</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
-                                        <td>242 408</td>
-                                        <td>35,68</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100% Айко
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">4.
+                                            Затраты
+                                            операционные постоянные*
                                         </td>
-                                        <td>223 285</td>
-                                        <td></td>
+                                        <td>947 599</td>
+                                        <td>34,98</td>
                                     </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Себестоимость продаж Выпечка уценка
-                                            Айко
-                                        </td>
-                                        <td>19 123</td>
-                                        <td></td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
-                                        <td>7 229</td>
-                                        <td>1,06</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний на обеды персонала</td>
-                                        <td>6 082</td>
-                                        <td>0,90</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb">
-                                        <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
-                                        <td>1 147</td>
-                                        <td>0,17</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Общий расход на сырье Айко с учетом
-                                            списаний
-                                        </td>
-                                        <td>249 637</td>
-                                        <td>36,74</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Себестоимость по суммовому учету</td>
-                                        <td></td>
-                                        <td>36,91</td>
-                                    </tr>
-
-                                    <tr class="vision-table__accordion_thumb-head">
-                                        <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации по
-                                            сырью
-                                            в
-                                            связке касса-кухня
-                                        </td>
-                                        <td>-2 859</td>
-                                        <td>-0,42</td>
-                                    </tr>
-
-
                                 </table>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
 
 
-                <div class="vision-table__bottom">
-                    <ul class="vision-table__buttons">
-                        <li class="selected"><a href="index.html">Операционная прибыль</a></li>
-                        <li><a href="index.html">Чистая прибыль</a></li>
-                    </ul>
-                </div>
-            </div>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="vision-table__wrapper">
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
+                                <table>
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">1.
+                                            Общая
+                                            выручка
+                                            от продаж
+                                        </td>
+                                        <td>947 599</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
+                                <table>
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">2.
+                                            Выручка
+                                            всех
+                                            категорий кроме "Выпечка" СП
+                                        </td>
+                                        <td>268 181</td>
+                                        <td>28,30</td>
+                                    </tr>
+                                </table>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
+                                <table>
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">3.
+                                            Выручка от
+                                            продаж "Выпечка" СП + "Слойка" СП
+                                        </td>
+                                        <td>679 418</td>
+                                        <td>71,70</td>
+                                    </tr>
+                                </table>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="vision-table__accordion">
+                            <li class="vision-table__accordion_item is-active">
+                                <table>
+                                    <tr class="vision-table__accordion_thumb-head vision-table__accordion_thumb-first">
+                                        <td class="vision-table__accordion_first vision-table__accordion_first-td">4.
+                                            Затраты
+                                            операционные постоянные*
+                                        </td>
+                                        <td>947 599</td>
+                                        <td>34,98</td>
+                                    </tr>
+                                </table>
+                                <div class="vision-table__accordion_panel">
+                                    <table>
+                                        <tr class="vision-table__accordion_thumb ">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка 100%</td>
+                                            <td>647 137</td>
+                                            <td>68,29</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Выручка Выпечка уценка*</td>
+                                            <td>32 281</td>
+                                            <td>3,41</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Айко</td>
+                                            <td>242 408</td>
+                                            <td>35,68</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка 100%
+                                                Айко
+                                            </td>
+                                            <td>223 285</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Себестоимость продаж Выпечка
+                                                уценка
+                                                Айко
+                                            </td>
+                                            <td>19 123</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Сумма списаний по сырью</td>
+                                            <td>7 229</td>
+                                            <td>1,06</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний на обеды
+                                                персонала
+                                            </td>
+                                            <td>6 082</td>
+                                            <td>0,90</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb">
+                                            <td class="vision-table__accordion_first">Сумма списаний регулир.</td>
+                                            <td>1 147</td>
+                                            <td>0,17</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Общий расход на сырье Айко с
+                                                учетом
+                                                списаний
+                                            </td>
+                                            <td>249 637</td>
+                                            <td>36,74</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Себестоимость по суммовому учету
+                                            </td>
+                                            <td></td>
+                                            <td>36,91</td>
+                                        </tr>
+
+                                        <tr class="vision-table__accordion_thumb-head">
+                                            <td class="vision-table__accordion_first">Излишки/Недостача инвентаризации
+                                                по
+                                                сырью
+                                                в
+                                                связке касса-кухня
+                                            </td>
+                                            <td>-2 859</td>
+                                            <td>-0,42</td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+            </ul>
 
 
         </div>
@@ -1219,7 +1667,11 @@
 
     <div class="blog-franchisee">
         <h3>Франчайзи о работе с нами</h3>
-
+        <div class="franchisee__slider_count">
+            <span class="sl-count__current">1</span>
+            /
+            <span class="sl-count__total">3</span>
+        </div>
         <div class="blog-franchisee__slider">
 
 
@@ -1505,7 +1957,40 @@
                 <h3>Проверьте свой город</h3>
                 <p>Мы ищем партнеров по всей России и всегда рады новых решениям</p>
                 <input type="text" placeholder="Ваш город">
-                <button class="button" type="submit">Отправить заявку</button>
+                <a href="#modal-cities" class="button" type="submit" uk-toggle>Отправить заявку</a>
+
+
+                <div id="modal-cities" city-check__modal uk-modal>
+                    <div class="city-check__modal_wrap">
+                        <h3>Хорошая новость! Франшиза Лавки Пирогова действует в <span>Казани</span></h3>
+                        <p>Свяжитесь с нами удобным для вас способом и получите пошаговую инструкцию для начала
+                            сотрудничества</p>
+
+                        <form action="/" class="city-check__modal_form">
+                            <div class="city-check__modal_checkbox_wrap">
+                                <div class="city-check__modal_checkbox">
+                                    <label for="modal-tg">Telegram</label>
+                                    <input type="radio" id="modal-tg" name="modal-radio" checked>
+                                </div>
+
+                                <div class="city-check__modal_checkbox">
+                                    <label for="modal-email">E-mail</label>
+                                    <input type="radio" id="modal-email" name="modal-radio">
+                                </div>
+                            </div>
+
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Ваш номер">
+                            <input type="text" placeholder="Ваш ID в Telegram, например @IvanIvanov">
+
+
+                            <div class="city-check__modal_bottom">
+                                <button class="button">Получить</button>
+                                <p>Ваши данные конфиденциальны и не будут переданы третьим лицам</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </form>
             <div class="city-check__item_right">
                 <img src="img/city-check-logo-1.svg" alt="">
@@ -1560,6 +2045,7 @@
     </div>
 </section>
 
+
 <!--footer start-->
 <footer class="footer">
     <div class="container">
@@ -1586,7 +2072,8 @@
         </div>
     </div>
 </footer>
-<!--footer end-->
+<!--footer end-->,
+<script src="js/uikit.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>

@@ -19,6 +19,10 @@
             font-size: 26px;
             line-height: 160%;
         }
+
+        h1 {
+            color: #ffffff;
+        }
     }
 
     &__item {
@@ -26,6 +30,7 @@
         bottom: -135px;
         left: 50%;
         transform: translateX(-50%);
+        overflow: hidden;
         width: 100%;
         height: 394px;
         background-color: #ffffff;
@@ -81,7 +86,8 @@
 
     &__video {
         img {
-            border-radius: 12px 0 0 12px;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -89,6 +95,19 @@
 
 .start__wrap_el {
     margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1440px) {
+    .start__wrap_left {
+        padding-right: 15px;
+        h4 {
+            max-width: 200px;
+        }
+
+        p {
+            max-width: 300px;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {

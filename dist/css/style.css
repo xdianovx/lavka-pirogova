@@ -965,6 +965,14 @@ h2, h3, h4, h5, h6 {
 .start__wrap_el {
   margin-bottom: 8px; }
 
+@media screen and (max-width: 1440px) {
+  .start__wrap_left {
+    padding-right: 15px; }
+    .start__wrap_left h4 {
+      max-width: 200px; }
+    .start__wrap_left p {
+      max-width: 300px; } }
+
 @media screen and (max-width: 1024px) {
   .start__item {
     padding: 0;
@@ -1057,6 +1065,10 @@ h2, h3, h4, h5, h6 {
     border-radius: 0 0 12px 12px; }
     .offer__right_wrap p {
       margin: 0; }
+
+@media screen and (max-width: 1440px) {
+  .offer__left h3 {
+    max-width: 300px; } }
 
 .progress {
   height: 589px;

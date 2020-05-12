@@ -24,23 +24,21 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
-
-
-
-
-
     $('.formats__slider').slick({
         prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
         nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
     });
 
-    $('.blog-franchisee__slider').slick({
+    let blogSlider = $('.blog-franchisee__slider').slick({
         prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
         nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
+    });
+
+    $('.sl-count__total').text(blogSlider.slick.slideCount);
+
+    blogSlider.on('afterChange', function (event, blogSlider, currentSlide) {
+        $(".sl-count__current").text(currentSlide + 1);
+
     });
 
     var time = 10;

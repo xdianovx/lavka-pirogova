@@ -100,6 +100,7 @@
 
 .blog-franchisee {
     margin-top: 163px;
+    position: relative;
 
     &__wrap {
         margin-top: 50px;
@@ -159,4 +160,25 @@
     top: 50px;
     right: 50px;
 
+}
+
+.franchisee__slider_count {
+    position: absolute;
+    top: 134px;
+    right: 107px;
+}
+
+.franchisee__slider_count .sl-count__current {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $orange;
+}
+
+.franchisee__slider_count .sl-count__total {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: $black;
 }

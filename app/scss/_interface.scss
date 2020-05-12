@@ -6,6 +6,8 @@ body {
   box-sizing: border-box;
 }
 
+
+
 li {
   list-style: none;
 }
@@ -18,12 +20,16 @@ ul {
 a {
   text-decoration: none;
   color: $black;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 hr {
   border: 1px solid #E6E1E5;
   margin: 0;
 }
+
 
 .button {
   font-family: 'Golos Text', sans-serif;
@@ -94,6 +100,10 @@ h2, h3, h4, h5, h6 {
     right: 10px;
     background-image: url('../img/wa.svg');
 
+  }
+
+  &:hover {
+    opacity: .8;
   }
 
 }
