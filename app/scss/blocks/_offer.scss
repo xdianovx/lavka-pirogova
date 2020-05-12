@@ -48,14 +48,6 @@
 
 
 @media screen and (max-width: 1440px) {
-}
-  .offer__left_bottom {
-    margin-top: 15px;
-
-    a {
-      margin-left: auto;
-  }
-
 
 }
 
@@ -77,6 +69,38 @@
 
   .offer__right {
     width: 40%;
+  }
+
+  .offer__left_bottom {
+    margin-top: 15px;
+
+    a {
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .offer {
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 350px;
+  }
+
+  .offer__right {
+    width: 100%;
+  }
+  .offer__right img {
+    width: 100%;
+  }
+
+  .offer__left {
+    width: 100%;
+
+    h3 {
+      position: absolute;
+      top: -190px;
+    }
   }
 }
 

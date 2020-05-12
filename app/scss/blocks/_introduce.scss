@@ -34,3 +34,9 @@
     margin-right: 50px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .introduce__wrap {
+        flex-direction: column;
+    }
+}

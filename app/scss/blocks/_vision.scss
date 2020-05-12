@@ -321,3 +321,40 @@ vision-table__bottom a {
         height: 550px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .vision h3 {
+        width: auto;
+    }
+    .vision-table__bottom li {
+        width: 40%;
+    }
+
+    .vision-table__bottom {
+        height: 72px;
+        bottom: -61px;
+        left: 0px;
+        transform: translateX(18px);
+        width: 100%;
+    }
+
+    .vision-table__head {
+        h5 {
+            font-size: 18px;
+            padding: 0px 45px;
+        }
+    }
+
+    .uk-tab > li > a {
+        font-size: 20px;
+    }
+
+    .uk-tab > .uk-active > a {
+        font-size: 20px;
+    }
+
+    .vision-speedup__video {
+        height: 350px;
+    }
+}

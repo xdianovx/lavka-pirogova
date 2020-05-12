@@ -119,3 +119,21 @@
         height: 350px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .formats__item {
+        flex-direction: column;
+    }
+
+    .formats__item_left {
+        width: 100%;
+    }
+
+    .formats__item_right {
+        margin-left: 0;
+        width: 100%;
+    }
+    .formats__item_right button{
+        width: 100%;
+    }
+}

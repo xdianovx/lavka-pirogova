@@ -156,3 +156,22 @@
         line-height: 150%;
     }
 }
+
+
+@media screen and (max-width: 768px){
+    .franchisee h3 {
+        width: auto;
+    }
+
+    .franchisee__item {
+        max-width: 49%;
+        height: 455px;
+    }
+    .franchisee__wrap {
+    justify-content: space-between;
+    }
+
+    .franchisee__info {
+        padding: 15px;
+    }
+}

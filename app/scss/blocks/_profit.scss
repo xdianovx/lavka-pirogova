@@ -58,3 +58,28 @@
     width: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .profit__wrap {
+    flex-direction: column;
+    position: relative;
+  }
+  .profit__left {
+    width: 100%;
+  }
+
+  .profit__right {
+    margin: 0;
+    width: 100%;
+  }
+
+  .profit__left_bottom {
+    margin-top: 0;
+    position: absolute;
+    bottom: -60px;
+  }
+
+  .profit p {
+    margin-top: 0;
+  }
+}
