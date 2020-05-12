@@ -82,3 +82,40 @@
 .formats__slider {
     height: 415px;
 }
+
+@media screen and (max-width: 1024px) {
+    .formats {
+        margin-top: 60px;
+    }
+    .formats__item_right p {
+        font-size: 20px;
+    }
+
+    .formats__item_right_info span {
+        font-size: 20px;
+    }
+
+    .formats__badge p {
+        padding: 15px;
+    }
+
+    .formats__item_left {
+        width: 50%;
+    }
+
+    .features__right {
+        margin-left: auto !important;
+    }
+
+    .features__right_item p {
+        font-size: 20px;
+    }
+
+    .features__right_item h3 {
+        font-size: 46px;
+    }
+
+    .formats__slider {
+        height: 350px;
+    }
+}

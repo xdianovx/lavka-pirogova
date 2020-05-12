@@ -1,23 +1,35 @@
 .duty {
-    margin-top: 136px;
-    height: 614px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin-top: 136px;
+  height: 614px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    &__wrap {
-        padding-top: 107px;
-        h3 {
-            color: $white;
-            width: 950px;
-            margin-top: 10px;
-        }
+  &__wrap {
+    padding-top: 107px;
 
-        p {
-            color: $white;
-            margin-top: 29px;
-            font-size: 26px;
-            line-height: 150%;
-        }
+    h3 {
+      color: $white;
+      width: 950px;
+      margin-top: 10px;
     }
+
+    p {
+      color: $white;
+      margin-top: 29px;
+      font-size: 26px;
+      line-height: 150%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .duty {
+    margin-top: 50px;
+    height: 514px;
+    &__wrap {
+      padding-top: 67px;
+    }
+  }
+
 }

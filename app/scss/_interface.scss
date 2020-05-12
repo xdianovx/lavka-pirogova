@@ -234,8 +234,8 @@ h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 1440px) {
   .container {
-    max-width: 1170px;
-    margin: 0 auto;
+    //max-width: 1170px;
+    //margin: 0 auto;
   }
   .telegram {
     color: #fff;
@@ -246,10 +246,24 @@ h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 1024px) {
+  h5 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 46px;
+  }
+
+  h1 {
+    padding-top: 50px;
+    font-size: 60px;
+  }
   .container {
-    max-width: 1054px;
-    margin: 0 auto;
-    padding: 01px 15px;
+    //max-width: 1054px;
+    //margin: 0 auto;
+    //padding: 0px 15px;
   }
 
   .whatsapp {
@@ -268,6 +282,11 @@ h2, h3, h4, h5, h6 {
       display: none;
     }
   }
+
+  .button {
+    font-size: 20px;
+    padding: 13px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -276,4 +295,35 @@ h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 425px) {
 
+}
+
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px){
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px){
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px){
+  .container {
+    max-width: 1140px;
+  }
 }

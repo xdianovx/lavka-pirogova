@@ -42,6 +42,7 @@
 }
 
 .questions__right_items {
+  margin-top: 34px;
   display: flex;
   justify-content: space-between;
 
@@ -67,5 +68,19 @@
   display: flex;
   a {
     margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .questions {
+    margin-top: 85px;
+  }
+
+  .questions__right_items {
+    flex-direction: column;
+  }
+
+  .questions__right_items p {
+    margin: 0;
   }
 }

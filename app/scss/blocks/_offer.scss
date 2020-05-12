@@ -48,10 +48,36 @@
 
 
 @media screen and (max-width: 1440px) {
+}
+  .offer__left_bottom {
+    margin-top: 15px;
 
+    a {
+      margin-left: auto;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .offer {
+    margin-top: 200px;
+  }
   .offer__left {
-      h3 {
-        max-width: 300px;
-      }
+    width: 60%;
+    margin-right: 50px;
+  }
+  .offer__left p {
+    width: auto;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .offer__right {
+    width: 40%;
   }
 }
+
+

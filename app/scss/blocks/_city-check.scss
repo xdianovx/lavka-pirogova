@@ -96,3 +96,14 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1024px) {
+  .city-check__item {
+    margin-top: 90px;
+  }
+
+  .city-check__item_left {
+    margin-bottom: 0;
+  }
+}

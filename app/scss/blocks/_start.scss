@@ -98,6 +98,9 @@
 }
 
 @media screen and (max-width: 1440px) {
+    .start__item {
+        height: auto;
+    }
     .start__wrap_left {
         padding-right: 15px;
         h4 {
@@ -111,6 +114,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .start {
+        height: 700px;
+    }
     .start__item {
         padding: 0;
         width: 90%;
@@ -132,9 +138,16 @@
             margin-left: auto;
             margin-right: auto;
         }
+        h4 {
+            max-width: none;
+        }
     }
     .start__wrap_right {
         display: none;
+    }
+
+    .start__wrap p {
+        font-size: 20px;
     }
 }
 
@@ -188,3 +201,4 @@
         }
     }
 }
+

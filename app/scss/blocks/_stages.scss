@@ -48,3 +48,15 @@
         color: $gray-captions;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .stages {
+        margin-top: 50px;
+        height: 579px;
+    }
+
+    .stages__wrap h3 {
+        padding-top: 30px;
+        width: auto;
+    }
+}

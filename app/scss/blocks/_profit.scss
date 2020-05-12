@@ -40,3 +40,21 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .profit {
+    height: 500px;
+  }
+  .profit__wrap {
+    padding-top: 40px;
+  }
+  .profit__right p {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .profit p {
+    font-size: 20px;
+    width: auto;
+  }
+}

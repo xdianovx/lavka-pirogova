@@ -16,11 +16,21 @@
     justify-content: space-between;
   }
   &__cart {
-    width: 448px;
+    width: 32%;
     background: #FFFFFF;
     box-shadow: 0px 18px 36px rgba(54, 49, 53, 0.1), 0px 0px 4px rgba(54, 49, 53, 0.15);
     border-radius: 12px;
     padding: 37px 32px;
     box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .progress {
+    height: 560px;
+    margin-top: 70px;
+  }
+  .progress__cart {
+    padding: 20px;
   }
 }

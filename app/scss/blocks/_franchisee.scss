@@ -134,3 +134,25 @@
     height: 7px;
     background-color: $orange;
 }
+
+@media screen and (max-width: 1440px) {
+    .franchisee__wrap {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .franchisee {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .franchisee__wrap {
+        justify-content: space-around;
+    }
+
+    .franchisee p {
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
