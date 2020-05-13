@@ -99,12 +99,17 @@ header {
     .header {
         &__wrap {
             height: 60px;
+            //display: none;
         }
 
         &__logo {
             img {
                 height: 32px;
             }
+        }
+
+        &__left {
+            display: none;
         }
     }
 }

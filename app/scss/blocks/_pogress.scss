@@ -34,3 +34,77 @@
     padding: 20px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .progress__cart {
+    box-shadow: none;
+    overflow: hidden;
+    height: 280px;
+  }
+  .progress__slider-wrap {
+    position: relative;
+
+
+  }
+  .progress__pagination {
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 7px;
+    background: #eee;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+  }
+
+  .progress__progress {
+    width: 0%;
+    height: 7px;
+    background-color: $orange;
+  }
+  .progress__wrap {
+    > .slick-custom-prev {
+      width: 24px;
+      height: 24px;
+      background: $orange;
+      text-decoration: none;
+      border: none;
+      position: absolute;
+      left: -13px;
+      top: 50%;
+      transform: translateY(52%);
+      &:before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        width: 6px;
+        height: 11px;
+        transform: rotate(180deg);
+        background-image: url('../img/next-sl-mob.svg');
+      }
+    }
+
+    > .slick-custom-next {
+
+      width: 24px;
+      height: 24px;
+      background: $orange;
+      text-decoration: none;
+      border: none;
+      position: absolute;
+      right: -13px;
+      top: 50%;
+      transform: translateY(52%);
+      &:before {
+        content: '';
+        position: absolute;
+        transform: rotate(0deg);
+        top: 7px;
+        left: 10px;
+        width: 6px;
+        height: 11px;
+        background-image: url('../img/next-sl-mob.svg');
+      }
+    }
+  }
+}

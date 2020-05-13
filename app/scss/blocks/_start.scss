@@ -157,6 +157,7 @@
 @media screen and (max-width: 768px) {
   .start {
     height: 700px;
+    margin-top: 80px;
 
     &__item {
       &_wrap {
@@ -219,3 +220,62 @@
     }
 }
 
+@media screen and (max-width: 425px) {
+  .start {
+    margin-top: 60px;
+    height: 424px;
+    &__wrap {
+      h1 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 110%;
+        padding-top: 51px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 160%;
+        font-weight: 500;
+      }
+    }
+
+    &__item {
+      bottom: -430px;
+    }
+  }
+
+  .start__item_wrap {
+    padding: 25px 15px;
+    height: 463px;
+  }
+
+  .start__wrap_left {
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    h4 {
+      font-family: 'Golos Text';
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    button {
+      width: 90%;
+    }
+  }
+  .start__wrap_el {
+    flex-direction: column;
+
+    span {
+      font-family: 'Golos Text';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      color: $black;
+    }
+  }
+
+}
