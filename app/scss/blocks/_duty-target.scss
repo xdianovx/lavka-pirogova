@@ -66,3 +66,29 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .duty-target__wrap {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .duty-target__left {
+        width: 100%;
+    }
+
+    .duty-target__right {
+        margin-left: 0;
+        width: 100%;
+
+        p:first-child {
+            font-size: 30px;
+            margin-top: 26px;
+        }
+
+        h4 {
+            font-weight: 700;
+        margin-bottom: 0;
+        }
+    }
+}

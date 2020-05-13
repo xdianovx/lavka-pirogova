@@ -174,4 +174,34 @@
     .franchisee__info {
         padding: 15px;
     }
+
+    .franchisee__slider .slick-dots li {
+        padding-left: 10px;
+    }
+
+    .blog-franchisee__right {
+        position: fixed !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        bottom: -100%;
+        background-color: #fff;
+    }
+
+    .blog-franchisee__left {
+        width: 100% !important;
+        img {
+            width: 100%;
+        }
+    }
+
+    .blog-franchisee__slider > .slick-custom-next {
+        top: 50% !important;
+        right: -20px !important;
+    }
+
+    .blog-franchisee__slider > .slick-custom-prev {
+        top: 50% !important;
+        left: -20px !important;
+    }
+
 }

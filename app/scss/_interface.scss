@@ -290,7 +290,11 @@ h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
-
+  .slick-custom-next:before {
+    &__before {
+      background-image: url('../img/next-sl-mob.svg');
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {

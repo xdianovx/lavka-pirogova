@@ -112,3 +112,12 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .features__right {
+    margin-left: 0 !important;
+  }
+  .features__right_item {
+    width: 100%;
+  }
+}

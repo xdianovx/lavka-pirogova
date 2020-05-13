@@ -1,7 +1,9 @@
 .menu {
-
     background-color: $gray-soft;
-
+    position: fixed;
+    top: 120px;
+    z-index: 12;
+    width: 100%;
     &__nav {
         height: 78px;
 
@@ -52,8 +54,8 @@
         position: absolute;
         width: 18px;
         height: 12px;
-        right: 50px;
-        top: 60px;
+        right: 40px;
+        top: 35px;
     }
     .menu {
         &__ul {

@@ -84,3 +84,36 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 768px){
+  .questions {
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+  .questions__left {
+    img {
+      width: 100%;
+    }
+  }
+
+  .questions__right {
+    margin-left: 0;
+    h4 {
+      display: none;
+
+    }
+    button {
+      display: none;
+    }
+  }
+  .questions__wrap {
+    flex-direction: column-reverse;
+
+  }
+    .questions__right_item {
+      margin-bottom: 16px;
+  }
+
+
+}

@@ -1,3 +1,10 @@
+header {
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+}
 .header {
 
     &__wrap {
@@ -77,6 +84,14 @@
     .active .header__logo {
         opacity: 1;
         z-index: 2;
+    }
+
+    .header__left {
+        margin-right: 70px;
+    }
+
+    .header__wrap {
+        height: 80px;
     }
 }
 
