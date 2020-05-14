@@ -125,3 +125,13 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .features-description__item {
+    display: none;
+  }
+
+   .features-description__right {
+     width: 100%;
+   }
+}

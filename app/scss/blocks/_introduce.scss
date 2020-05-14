@@ -45,3 +45,15 @@
     }
 
 }
+
+
+@media screen and (max-width: 425px) {
+    .introduce {
+        &__left {
+            p {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}

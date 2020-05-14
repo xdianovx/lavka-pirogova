@@ -20,7 +20,7 @@
         font-family: 'Golos Text';
         font-weight: 500;
         font-size: 26px;
-        color: $gray-captions;
+        color: $gray-captions !important;
 
         &:hover {
             color: $black;

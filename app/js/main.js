@@ -202,20 +202,13 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    var time = 10;
-    var $bar,
-        $slickProg,
-        isPause,
-        tick,
-        percentTime;
-
 
     $(".franchisee__wrap").slick({
 
 
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 769,
                 settings: {
                     infinite: true,
                     arrows: true,
@@ -234,45 +227,6 @@ $(document).ready(function () {
         ]
     });
 
-    $slickProg = $('.franchisee__wrap');
-    $bar = $(' .progress__progress');
 
-    $('.franchisee__wrap').on({
-        mouseenter: function () {
-            isPause = true;
-        },
-        mouseleave: function () {
-            isPause = false;
-        }
-    })
-
-    function startProgressbar() {
-        resetProgressbar();
-        percentTime = 0;
-        isPause = false;
-        tick = setInterval(interval, 10);
-    }
-
-    function interval() {
-        if (isPause === false) {
-            percentTime += 1 / (time + 0.1);
-            $bar.css({
-                width: percentTime + "%"
-            });
-            if (percentTime >= 100) {
-                $slickProg.slick('slickNext');
-                startProgressbar();
-            }
-        }
-    }
-
-    function resetProgressbar() {
-        $bar.css({
-            width: 0 + '%'
-        });
-        clearTimeout(tick);
-    }
-
-    startProgressbar();
 
 });

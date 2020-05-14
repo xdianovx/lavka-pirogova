@@ -38,7 +38,10 @@ $(document).ready(function () {
         $(".sl-count__current").text(currentSlide + 1);
 
     });
+});
 
+
+$(document).ready(function () {
     var time = 10;
     var $bar,
         $slick,
@@ -118,22 +121,38 @@ $(document).ready(function () {
         $('html,body').stop().animate({scrollTop: $(d).offset().top - 250}, t);
 
     });
+});
+
+
+$(document).ready(function () {
+    var time = 10;
+    var $bar,
+        $slickProg,
+        isPause,
+        tick,
+        percentTime;
 
 
     $(".progress__wrap").slick({
-        settings: "unslick",
-        prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
-        nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>',
+
+
         responsive: [
             {
                 breakpoint: 769,
-                infinite: true,
-                arrows: true,
-                speed: 300,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                draggable: true,
-
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
+                    nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>',
+                }
+            },
+            {
+                breakpoint: 4000,
+                settings: "unslick"
             }
         ]
     });
@@ -178,5 +197,36 @@ $(document).ready(function () {
     }
 
     startProgressbar();
+
+});
+
+
+$(document).ready(function () {
+
+    $(".franchisee__wrap").slick({
+
+
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
+                    nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>',
+                }
+            },
+            {
+                breakpoint: 4000,
+                settings: "unslick"
+            }
+        ]
+    });
+
+
 
 });

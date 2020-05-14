@@ -205,3 +205,25 @@
     }
 
 }
+
+@media screen and (max-width: 425px) {
+    .franchisee__item {
+        max-width: 100%;
+    }
+
+    .franchisee__slider .slick-dots li.slick-active {
+        display: flex;
+    }
+
+    .franchisee__slider .slick-dots li {
+        width: 100% !important;
+        display: none;
+    }
+
+
+
+
+
+
+
+}
