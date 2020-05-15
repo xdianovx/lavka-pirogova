@@ -48,9 +48,17 @@
 
 
 @media screen and (max-width: 1440px) {
+  .offer__left {
 
+    p {
+      font-size: 18px;
+    }
+
+    h3 {
+      width: 600px;
+    }
+  }
 }
-
 
 @media screen and (max-width: 1024px) {
   .offer {
@@ -97,16 +105,16 @@
     width: 100%;
 
     h3 {
+      width: auto;
       position: absolute;
       top: -190px;
     }
   }
 }
 
-
 @media screen and (max-width: 425px) {
   .offer {
-    margin-top: 600px
+    margin-top: 480px
   }
 
   .offer__left {

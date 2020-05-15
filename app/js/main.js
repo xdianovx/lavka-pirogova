@@ -83,7 +83,7 @@ $(document).ready(function () {
 
     function interval() {
         if (isPause === false) {
-            percentTime += 1 / (time + 0.1);
+            percentTime += 2 / (time + 0.1);
             $bar.css({
                 width: percentTime + "%"
             });
@@ -105,12 +105,15 @@ $(document).ready(function () {
 
 
     $(function () {
-        $(".vision-table__accordion > vision-table__accordion_item.is-active").children(".vision-table__accordion_panel").slideDown();
+        $(".vision-table__accordion > vision-table__accordion_item").children(".vision-table__accordion_panel").slideUp();
 
         $(".vision-table__accordion > .vision-table__accordion_item").click(function () {
-            $(this).siblings(".vision-table__accordion_item").removeClass("is-active").children(".vision-table__accordion_panel").slideUp();
-            $(this).toggleClass("is-active").children(".vision-table__accordion_panel").slideToggle("ease-out");
+            $(this).siblings(".vision-table__accordion_item").addClass("is-active").children(".vision-table__accordion_panel").slideDown();
+            $(this).toggleClass("is-active").children(".vision-table__accordion_panel ").slideToggle("ease-out");
+            $(".vision-table__chevron").toggleClass("is-active");
+
         });
+
     });
 
 

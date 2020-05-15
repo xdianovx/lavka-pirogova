@@ -129,22 +129,51 @@
     height: 7px;
     background: #eee;
 }
+
 .franchisee__pagination .franchise__progress {
     width: 0%;
     height: 7px;
     background-color: $orange;
 }
 
+
+
 @media screen and (max-width: 1440px) {
+    .franchisee {
+        margin-top: 40px;
+        margin-bottom: 60px;
+         p {
+             font-size: 18px;
+         }
+    }
     .franchisee__wrap {
         justify-content: space-around;
     }
+
+    .franchisee__slider_count {
+        top: 105px !important;
+    }
+
+    .franchisee__item {
+        max-width: 320px;
+        height: 400px;
+    }
+
+    .franchisee__info {
+        padding: 15px;
+    }
 }
+
+
 
 @media screen and (max-width: 1024px) {
     .franchisee {
         margin-top: 50px;
         margin-bottom: 50px;
+
+        &__item {
+            max-width: 50%;
+        }
     }
     .franchisee__wrap {
         justify-content: space-around;
@@ -156,7 +185,6 @@
         line-height: 150%;
     }
 }
-
 
 @media screen and (max-width: 768px){
     .franchisee h3 {
@@ -207,6 +235,10 @@
 }
 
 @media screen and (max-width: 425px) {
+    .franchisee {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
     .franchisee__item {
         max-width: 100%;
     }
@@ -220,10 +252,18 @@
         display: none;
     }
 
+    .franchisee__slider .slick-dots {
+        height: 45px;
+    }
+
+    .franchisee__pagination {
+        bottom: 47px;
+    }
 
 
-
-
+    .franchisee,  .slick-custom-prev.slick-custom-next {
+        display: none;
+    }
 
 
 }

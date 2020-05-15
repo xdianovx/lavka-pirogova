@@ -99,18 +99,34 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .start {
+    margin-top: 120px;
+    height: 835px;
+  }
+
+  .start__wrap p {
+
+    font-size: 20px;
+  }
+
   .start__item {
     height: auto;
+    width: 80%;
+    bottom: -210px;
   }
   .start__wrap_left {
     padding-right: 15px;
 
     h4 {
-      max-width: 200px;
+      max-width: 340px;
     }
 
     p {
       max-width: 300px;
+    }
+
+    button {
+      margin-top: 0;
     }
   }
 }
@@ -229,7 +245,7 @@
         font-weight: 600;
         font-size: 28px;
         line-height: 110%;
-        padding-top: 51px;
+        padding-top: 20px;
       }
 
       p {
@@ -240,7 +256,8 @@
     }
 
     &__item {
-      bottom: -430px;
+      bottom: -310px;
+      height: 470px;
     }
   }
 
@@ -264,6 +281,7 @@
 
     button {
       width: 90%;
+      bottom: 60px;
     }
   }
   .start__wrap_el {

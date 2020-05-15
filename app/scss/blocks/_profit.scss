@@ -46,6 +46,20 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .profit {
+    margin-top: -20px;
+    height: 440px;
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .profit__wrap {
+    padding-top: 50px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .profit {
     height: 500px;
@@ -96,11 +110,10 @@
   }
 }
 
-
 @media screen and (max-width: 425px) {
   .profit {
-    margin-top: -30px;
-      height: 460px;
+    margin-top: -150px;
+    height: 460px;
 
     &__left {
       p {

@@ -33,7 +33,9 @@
       letter-spacing: 0.01em;
       color: $black-header;
       margin-bottom: 6px;
-
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -42,6 +44,14 @@
   height: 100%;
 }
 
+
+
+
+@media screen and  (max-width: 1440px) {
+  .footer {
+    margin-top: 100px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .footer {

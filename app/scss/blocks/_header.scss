@@ -65,6 +65,12 @@ header {
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .header__wrap {
+        height: 80px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .header__logo_text {
         margin-left: 10px;

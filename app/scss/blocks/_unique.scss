@@ -95,6 +95,30 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 1440px) {
+  .unique {
+    margin-top: 50px;
+    &__wrap {
+      margin-bottom: 0;
+    }
+  }
+  .unique__right_item {
+    height: 250px;
+  }
+  .unique__slider_bottom {
+    padding: 10px;
+    height: 187px;
+  }
+
+  .unique__slider_count {
+    bottom: 28px;
+    right: 88px;
+  }
+  .unique__right_item p {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .unique__wrap {
     flex-direction: column;
@@ -148,7 +172,10 @@
 
 
 @media screen and (max-width: 768px) {
-
+  .unique__slider_count {
+    bottom: 6px;
+    right: 80px;
+  }
   .unique {
     margin-top: 40px;
   }

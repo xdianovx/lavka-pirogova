@@ -1,228 +1,250 @@
 .blog {
-    margin-top: 72px;
+  margin-top: 72px;
 
 
-    &__wrap {
-        margin-top: 44px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 64px;
+  &__wrap {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  &__left {
+    width: 50%;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 528px;
+  }
+
+  &__right {
+    width: 50%;
+    margin-left: 50px;
+
+    p {
+      font-size: 24px;
+      line-height: 150%;
     }
 
-    &__left {
-        width: 50%;
-        border-radius: 12px;
-        overflow: hidden;
-        height: 528px;
+    a {
+      position: relative;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      margin-top: 50px;
+      display: inline-block;
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 1px;
+        right: -34px;
+        width: 15px;
+        height: 24px;
+        background-image: url('../img/blof-arrow.svg');
+      }
     }
-
-    &__right {
-        width: 50%;
-        margin-left: 50px;
-
-        p {
-            font-size: 24px;
-            line-height: 150%;
-        }
-
-        a {
-            position: relative;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 26px;
-            margin-top: 50px;
-            display: inline-block;
-
-            &:before {
-                position: absolute;
-                content: '';
-                top: 1px;
-                right: -34px;
-                width: 15px;
-                height: 24px;
-                background-image: url('../img/blof-arrow.svg');
-            }
-        }
-    }
+  }
 }
 
 .blog-second {
-    &__wrap {
-        display: flex;
-        padding-top: 64px;
-        align-items: flex-start;
+  &__wrap {
+    display: flex;
+    padding-top: 64px;
+    align-items: flex-start;
+  }
+
+  &__left {
+    border-radius: 12px;
+    height: 204px;
+    overflow: hidden;
+    width: 447px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    width: 330px;
+    margin-left: 50px;
+  }
+
+  &__right {
+    width: 447px;
+    justify-self: right;
+    margin-left: auto;
+
+    p {
+      margin: 0;
     }
 
-    &__left {
-        border-radius: 12px;
-        height: 204px;
-        overflow: hidden;
-        width: 447px;
-        img {
-            width: 100%;
-        }
+    a {
+      position: relative;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      display: inline-block;
+      margin-top: 36px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 1px;
+        right: -34px;
+        width: 15px;
+        height: 24px;
+        background-image: url('../img/blof-arrow.svg');
+      }
     }
-
-    &__title {
-        width: 330px;
-        margin-left: 50px;
-    }
-
-    &__right {
-        width: 447px;
-        justify-self: right;
-        margin-left: auto;
-
-        p {
-            margin: 0;
-        }
-
-        a {
-            position: relative;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 26px;
-            display: inline-block;
-            margin-top: 36px;
-
-            &:before {
-                position: absolute;
-                content: '';
-                top: 1px;
-                right: -34px;
-                width: 15px;
-                height: 24px;
-                background-image: url('../img/blof-arrow.svg');
-            }
-        }
-    }
+  }
 }
 
 .blog-franchisee {
-    margin-top: 163px;
+  margin-top: 163px;
+  position: relative;
+
+  &__wrap {
+    margin-top: 50px;
+    display: flex;
+  }
+
+  &__left {
+    border-radius: 12px;
+    overflow: hidden;
+
+    &_wrap {
+      padding: 16px 40px;
+      border: 1px solid #E6E1E5;
+      border-radius: 0 0 12px 12px;
+      margin-top: -7px;
+
+      p {
+        margin: 0;
+
+        span {
+          color: $gray-captions;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    img {
+      height: 320px;
+    }
+
+  }
+
+  &__right {
+    margin-left: 50px;
     position: relative;
+    width: 779px;
 
-    &__wrap {
-        margin-top: 50px;
-        display: flex;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 42px;
+      background-image: url('../img/blog-quotes.svg');
     }
 
-    &__left {
-        border-radius: 12px;
-        overflow: hidden;
-
-        &_wrap {
-            padding: 16px 40px;
-            border: 1px solid #E6E1E5;
-            border-radius: 0 0 12px 12px;
-            margin-top: -7px;
-            p {
-                margin: 0;
-
-                span {
-                    color: $gray-captions;
-                    font-size: 16px;
-                    line-height: 20px;
-                }
-            }
-        }
-
-        img {
-            height: 320px;
-        }
-
+    p {
+      margin: 0;
+      padding-top: 79px;
+      font-size: 24px;
+      line-height: 150%;
     }
-
-    &__right {
-        margin-left: 50px;
-        position: relative;
-        width: 779px;
-        &:before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 68px;
-            height: 42px;
-            background-image: url('../img/blog-quotes.svg');
-        }
-
-        p {
-            margin: 0;
-            padding-top: 79px;
-            font-size: 24px;
-            line-height: 150%;
-        }
-    }
+  }
 }
 
 .blog-franchisee__slider .slick-arrow {
-    top: 50px;
-    right: 50px;
+  top: 50px;
+  right: 50px;
 
 }
 
 .franchisee__slider_count {
-    position: absolute;
-    top: 134px;
-    right: 107px;
+  position: absolute;
+  top: 134px;
+  right: 107px;
 }
 
 .franchisee__slider_count .sl-count__current {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: $orange;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: $orange;
 }
 
 .franchisee__slider_count .sl-count__total {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    color: $black;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: $black;
 }
 
 
-@media screen and (max-width: 1024px) {
-    .blog {
-        margin-top: 40px;
-    }
-
-    .blog__wrap {
-        margin-top: 40px;
-        margin-bottom: 0px;
-    }
-
-    .blog__right p {
-        font-size: 20px;
-    }
-
-    .blog-franchisee__left img {
-        height: 320px;
-        object-fit: cover;
-    }
-
-    .franchisee__slider_count {
-        top: 113px;
-    }
-
-    .blog-franchisee__right p {
-        font-size: 20px;
-    }
-
+@media screen and (max-width: 1440px) {
     .blog-franchisee {
-        margin-top: 40px;
-        position: relative;
+        margin-top: 100px;
     }
+    .blog__wrap {
+        justify-content: flex-start;
+    }
+  .blog__right {
 
-    .blog__right a {
-        margin-top: 0;
+    p {
+      font-size: 18px;
     }
+  }
+
+  .blog-franchisee__right p {
+    font-size: 18px;
+  }
+  .blog__left {
+    width: 30%;
+    border-radius: 12px;
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .blog {
+    margin-top: 40px;
+  }
+
+  .blog__wrap {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+
+  .blog-franchisee__left img {
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .franchisee__slider_count {
+    top: 113px;
+  }
+
+
+  .blog-franchisee {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .blog__right a {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .blog {
-        display: none;
-    }
+  .blog {
+    display: none;
+  }
 }

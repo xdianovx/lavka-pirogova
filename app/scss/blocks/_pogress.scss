@@ -24,6 +24,14 @@
     box-sizing: border-box;
   }
 }
+@media screen and (max-width: 1440px){
+  .progress {
+    margin-top: 50px;
+    h3 {
+      padding-top: 50px;
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .progress {
@@ -106,5 +114,11 @@
         background-image: url('../img/next-sl-mob.svg');
       }
     }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .progress {
+    margin-top: 20px;
   }
 }

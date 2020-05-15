@@ -20,6 +20,21 @@
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .introduce {
+        margin-top: 100px;
+    }
+    .introduce__wrap {
+        justify-content: space-around;
+    }
+    .introduce__left {
+        text-align: justify;
+        margin-right: 0;
+        p {
+            font-size: 18px;
+        }
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .introduce {
@@ -49,6 +64,7 @@
 
 @media screen and (max-width: 425px) {
     .introduce {
+        margin-top: 0;
         &__left {
             p {
                 font-size: 12px;
