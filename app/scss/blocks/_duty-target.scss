@@ -67,6 +67,10 @@
             font-size: 18px;
         }
     }
+
+    .duty-target__left:before {
+        left: -100px;
+    }
 }
 
 @media screen and (max-width: 1024px) {

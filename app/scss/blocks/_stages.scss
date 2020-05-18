@@ -29,14 +29,16 @@
 }
 
 .stages__wrap_item {
-    height: 350px;
+    height: 200px;
     width: 310px;
     display: flex;
-
+    position: relative;
     flex-direction: column;
     justify-content: space-around;
     img {
         margin: 0 auto;
+
+
     }
     h5 {
         font-family: 'Golos Text';
@@ -47,6 +49,21 @@
         font-weight: 500;
         color: $gray-captions;
     }
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: -140px;
+        height: 3px;
+        width: 60%;
+        background-color: $gray-strokes;
+    }
+
+    &:last-child.stages__wrap_item:before {
+        height: 0;
+    }
+
 }
 
 
@@ -63,8 +80,18 @@
         }
     }
 
-    .stages__wrap_item h5 {
-        font-size: 18px;
+    .stages__wrap_item {
+        align-items: center;
+        height: 200px;
+        margin-top: 150px;
+        h5 {
+            font-size: 18px;
+            width: 230px;
+        }
+        &:nth-child(odd) {
+            margin-top: 0;
+            margin-bottom: 150px;
+        }
     }
 }
 
@@ -82,7 +109,7 @@
 
 @media screen and (max-width: 425px) {
     .stages {
-        height: 556px;
+        height: 630px;
     }
     .stages-slider__wrap {
         flex-direction: column;

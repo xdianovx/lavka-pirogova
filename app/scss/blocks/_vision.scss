@@ -338,6 +338,11 @@ vision-table__bottom a {
   width: 11px;
 }
 
+.vision-table__bottom {
+  a {
+    font-family: 'Golos Text', sans-serif;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .vision-table__chevron {
@@ -416,10 +421,14 @@ vision-table__bottom a {
 
   .vision-table__bottom {
     height: 46px;
-    bottom: -35px;
+    bottom: -48px;
     left: 1px;
     transform: translateX(18px);
     width: 100%;
+  }
+
+  .vision-table__wrap {
+    border-radius: 12px 12px 0 0;
   }
 
   .vision-table__head {
@@ -431,10 +440,12 @@ vision-table__bottom a {
 
   .uk-tab > li > a {
     font-size: 20px;
+    padding: 13px 0;
   }
 
   .uk-tab > .uk-active > a {
     font-size: 20px;
+    padding: 13px 0;
   }
 
   .vision-speedup__video {
@@ -491,11 +502,14 @@ vision-table__bottom a {
   }
 
   .uk-tab > li > a {
-    font-size: 15px;
-    padding: 10px;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 14px;
+    padding: 13px 0;
   }
   .uk-tab > .uk-active > a {
-    font-size: 15px;
+    font-size: 14px;
+    font-family: 'Golos Text', sans-serif;
+    padding: 10px 0;
   }
 
   .vision-table__wrapper {

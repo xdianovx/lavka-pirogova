@@ -9,7 +9,6 @@
     padding: 64px;
     position: relative;
 
-
     &_left {
       width: 1000px;
       margin-bottom: 96px;
@@ -29,7 +28,7 @@
         width: 387px;
       }
 
-      a {
+      button {
         position: absolute;
         bottom: -28px;
         left: 50%;
@@ -97,6 +96,9 @@
   }
 }
 
+.city-check__item_left a {
+
+}
 
 
 
@@ -128,9 +130,35 @@
 }
 
 @media screen and (max-width: 768px) {
-  .city-check__item_left p {
-    width: 100%;
+  .city-check__modal_wrap {
+    width: auto;
+    padding: 35px;
+  }
+
+  .city-check__modal_wrap h3 {
+    font-size: 28px;
+  }
+  .city-check__item_left {
     margin-top: 20px;
+    p {
+      width: 100%;
+
+    }
+  }
+
+  .city-check__modal_wrap p {
+    font-size: 16px;
+  }
+
+  .city-check__modal_checkbox_wrap label {
+    margin-right: 20px;
+  }
+
+  .city-check__modal_bottom {
+    align-items: center;
+    button {
+      padding: 15px;
+    }
   }
 
   .city-check__item {
@@ -149,6 +177,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .city-check__modal_wrap p {
+    font-size: 14px;
+  }
 
   .city-check__item {
     padding: 15px 15px 30px 15px;
@@ -162,5 +193,8 @@
 
   .city-check__item_left input {
     margin-top: 0;
+  }
+  .city-check__modal_wrap h3 {
+    font-size: 22px;
   }
 }

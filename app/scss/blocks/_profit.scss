@@ -113,7 +113,7 @@
 @media screen and (max-width: 425px) {
   .profit {
     margin-top: -150px;
-    height: 460px;
+    height: 400px;
 
     &__left {
       p {
@@ -134,5 +134,12 @@
         line-height: 150%
       }
     }
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .profit {
+    margin-top: -115px;
   }
 }

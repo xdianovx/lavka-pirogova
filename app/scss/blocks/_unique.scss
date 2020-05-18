@@ -19,8 +19,10 @@
     width: 685px;
     border-radius: 12px;
     overflow: hidden;
+
     &_item {
       width: 100%;
+      box-shadow:0px 18px 36px rgba(54, 49, 53, 0.1);
     }
 
     &_bottom {
@@ -29,7 +31,6 @@
       width: 100%;
       padding: 32px 48px;
       background: #FFFFFF;
-      box-shadow: 0px 18px 36px rgba(54, 49, 53, 0.1), 0px 0px 4px rgba(54, 49, 53, 0.15);
       border-radius: 0 0 12px 12px;
     }
   }
@@ -57,8 +58,9 @@
         top: 0;
         left: 0
       }
-      img {
 
+      img {
+        object-fit: cover;
         border-radius: 12px;
         width: 100%;
         height: 100%;
@@ -66,7 +68,7 @@
 
       p {
         position: absolute;
-        z-index: 1 ;
+        z-index: 1;
         bottom: 23px;
         left: 50%;
         transform: translateX(-50%);
@@ -83,7 +85,6 @@
 }
 
 
-
 .sl-count__current {
 
 }
@@ -95,9 +96,11 @@
   font-weight: 500;
 }
 
+
 @media screen and (max-width: 1440px) {
   .unique {
     margin-top: 50px;
+
     &__wrap {
       margin-bottom: 0;
     }
@@ -148,8 +151,8 @@
   }
 
   .unique__slider_count {
-    bottom: 40px;
-    right: 102px;
+    bottom: 8px;
+    right: 77px;
   }
 
   .unique__right_wrap {
@@ -172,9 +175,65 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .uniqueArr {
+    z-index: 2;
+    position: relative;
+    top: -180px;
+  }
+
+
   .unique__slider_count {
-    bottom: 6px;
-    right: 80px;
+    display: none;
+  }
+
+  .unique__slider {
+    > .slick-custom-prev {
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      background: $orange;
+      display: flex;
+      text-decoration: none;
+      border: none;
+      position: absolute;
+      left: -13px;
+      top: 15%;
+      transform: translateY(52%);
+      &:before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        width: 6px;
+        height: 10px;
+        transform: rotate(180deg);
+        background-image: url('../img/next-sl-mob.svg');
+      }
+    }
+
+    > .slick-custom-next {
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      background: $orange;
+      text-decoration: none;
+      border: none;
+      position: absolute;
+      right: -13px;
+      top: 15%;
+      transform: translateY(52%);
+      &:before {
+        content: '';
+        position: absolute;
+        transform: rotate(0deg);
+        top: 7px;
+        left: 10px;
+        width: 6px;
+        height: 11px;
+        background-image: url('../img/next-sl-mob.svg');
+      }
+    }
   }
   .unique {
     margin-top: 40px;
@@ -188,11 +247,19 @@
   .unique__right_wrap {
     display: none;
   }
+
+  .unique__slider {
+    overflow: visible;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .unique {
     margin-top: 30px;
+  }
+
+  .unique__slider_item {
+    box-shadow: none;
   }
 }
 

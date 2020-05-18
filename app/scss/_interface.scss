@@ -258,9 +258,9 @@ h2, h3, h4, h5, h6 {
   }
 
   .container {
-    //max-width: 1170px;
-    //margin: 0 auto;
+    padding: 0 15px;
   }
+
   .telegram {
     color: #fff;
     padding: 12px 9px;
@@ -269,14 +269,12 @@ h2, h3, h4, h5, h6 {
     margin-left: 24px;
   }
 
-
   .slick-arrow {
     position: absolute;
     z-index: 2;
     bottom: 5px;
     right: 25px;
   }
-
 
   .slick-custom-prev,
   .slick-custom-next {
@@ -293,99 +291,98 @@ h2, h3, h4, h5, h6 {
     top: 5px;
     left: 11px;
   }
+}
 
-  @media screen and (max-width: 1024px) {
-    h5 {
-      font-size: 20px;
-    }
-    h4 {
-      font-size: 22px;
-    }
-    h3 {
-      font-size: 30px;
-    }
-
-    h1 {
-      padding-top: 50px;
-      font-size: 60px;
-    }
-    .container {
-      //max-width: 1054px;
-      //margin: 0 auto;
-      //padding: 0px 15px;
-    }
-
-    .whatsapp {
-      span {
-        display: none;
-      }
-    }
-
-    .telegram {
-      color: #fff;
-      border-radius: 12px;
-      background: #419FD9;
-      margin-left: 24px;
-      padding: 13px 35px;
-
-      span {
-        display: none;
-      }
-    }
-
-    .button {
-      font-size: 20px;
-      padding: 13px;
-    }
+@media screen and (max-width: 1024px) {
+  h5 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 30px;
   }
 
-  @media screen and (max-width: 768px) {
-    .slick-custom-next:before {
-      &__before {
-        background-image: url('../img/next-sl-mob.svg');
-      }
-    }
+  h1 {
+    padding-top: 50px;
+    font-size: 60px;
   }
-
-  @media screen and (max-width: 425px) {
-    h3 {
-      font-size: 24px;
-    }
-    .button {
-      font-size: 16px;
-      padding: 10px;
-    }
-  }
-
-
-
   .container {
-    padding: 0 15px;
+    //max-width: 1054px;
+    //margin: 0 auto;
+    //padding: 0px 15px;
   }
 
-  @media (min-width: 575.98px) {
-    .container {
-      max-width: 540px;
-      margin: auto;
-      padding: 0;
+  .whatsapp {
+    span {
+      display: none;
     }
   }
 
-  @media (min-width: 767.98px) {
-    .container {
-      max-width: 720px;
+  .telegram {
+    color: #fff;
+    border-radius: 12px;
+    background: #419FD9;
+    margin-left: 24px;
+    padding: 13px 35px;
+
+    span {
+      display: none;
     }
   }
 
-  @media (min-width: 991.98px) {
-    .container {
-      max-width: 960px;
+  .button {
+    font-size: 20px;
+    padding: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-custom-next:before {
+    &__before {
+      background-image: url('../img/next-sl-mob.svg');
     }
   }
+}
 
-  @media (min-width: 1199.98px) {
-    .container {
-      max-width: 1390px;
-    }
+@media screen and (max-width: 425px) {
+  h3 {
+    font-size: 24px;
+  }
+  .button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1390px;
   }
 }

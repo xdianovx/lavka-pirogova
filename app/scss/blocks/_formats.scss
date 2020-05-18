@@ -154,6 +154,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .formats__slider_bottom {
     padding: 15px;
   }
@@ -198,41 +199,86 @@
     }
 
     .formats__badge a:before {
-        top: 0px;
-        right: -30px;
+      bottom: -2px;
+      right: -30px;
+      top: auto;
     }
+
+  .formats__slider {
+    overflow: visible;
+    height: 193px;
+    > .slick-custom-prev {
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      background: $orange;
+      display: flex;
+      text-decoration: none;
+      border: none;
+      position: absolute;
+      left: -13px;
+      top: 40%;
+      transform: translateY(52%);
+      &:before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        width: 6px;
+        height: 10px;
+        transform: rotate(180deg);
+        background-image: url('../img/next-sl-mob.svg');
+      }
+    }
+
+    img {
+      height: 193px;
+      margin-right: 20px;
+      width: auto;
+      -o-object-fit: contain;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    > .slick-custom-next {
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      background: $orange;
+      text-decoration: none;
+      border: none;
+      position: absolute;
+      right: -13px;
+      top: 40%;
+      transform: translateY(52%);
+      &:before {
+        content: '';
+        position: absolute;
+        transform: rotate(0deg);
+        top: 7px;
+        left: 10px;
+        width: 6px;
+        height: 11px;
+        background-image: url('../img/next-sl-mob.svg');
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
   .formats__badge p {
     font-size: 16px;
   }
-  .formats__slider .slick-custom-next {
-    right: 10px;
-    top: 89px;
-  }
 
-  .formats__slider .slick-custom-prev {
-    left: 10px;
-    top: 89px;
-  }
 
-  .formats__slider .slick-custom-prev {
-    display: none;
-  }
+
+
   .formats__slider {
-    height: auto;
-  }
-
-  .formats__badge a:before {
-    top: 47px;
   }
 
   .formats__item {
-    margin-top: 25px;
+    margin-top: 34px;
     border-bottom: 1px solid $gray-strokes;
     padding-bottom: 25px;
-    margin-top: 25px;
 
     &:last-child {
       border: none;
