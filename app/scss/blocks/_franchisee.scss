@@ -27,7 +27,6 @@
         margin-bottom: 24px;
         max-width: 448px;
         height: 525px;
-        border-radius: 12px;
         border: 1px solid #E6E1E5;
 
         img {
@@ -146,9 +145,10 @@
              font-size: 18px;
          }
     }
+
     .franchisee__wrap {
-        justify-content: space-around;
-    }
+        justify-content: center;
+            }
 
     .franchisee__slider_count {
         top: 105px !important;
@@ -157,14 +157,14 @@
     .franchisee__item {
         max-width: 320px;
         height: 400px;
+        margin-right: 20px;
+
     }
 
     .franchisee__info {
         padding: 15px;
     }
 }
-
-
 
 @media screen and (max-width: 1024px) {
     .franchisee {
