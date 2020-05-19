@@ -238,7 +238,9 @@ h2, h3, h4, h5, h6 {
   right: 32px;
 }
 
-
+.pager__item:active {
+  font-weight: 700;
+}
 @media screen and (max-width: 1440px) {
   h1 {
     font-size: 64px;
@@ -339,6 +341,14 @@ h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
+  .telegram {
+    margin-left: 0;
+    padding: 13px;
+  }
+
+  .whatsapp {
+    margin-left: 0;
+  }
   .slick-custom-next:before {
     &__before {
       background-image: url('../img/next-sl-mob.svg');

@@ -84,7 +84,10 @@ header {
 
 
 @media screen and (max-width: 768px) {
-
+    .header__phone {
+        padding-left: 30px;
+        margin-right: 15px;
+    }
     .header__logo_text {
         display: none;
     }
@@ -98,7 +101,8 @@ header {
     }
 
     .header__left {
-        margin-right: 70px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .header__wrap {

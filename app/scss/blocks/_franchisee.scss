@@ -1,269 +1,336 @@
 .franchisee {
-    margin-top: 163px;
-    margin-bottom: 136px;
-    h3 {
-        width: 900px;
+  margin-top: 163px;
+  margin-bottom: 136px;
+
+  h3 {
+    width: 900px;
+  }
+
+  p {
+    margin-top: 36px;
+    font-size: 26px;
+    line-height: 150%;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    border-radius: 12px;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 24px;
+    max-width: 448px;
+    height: 525px;
+    border: 1px solid #E6E1E5;
+
+    img {
+      width: 100%;
     }
+
     p {
-        margin-top: 36px;
-        font-size: 26px;
-        line-height: 150%;
-    }
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-
-        overflow: hidden;
+      font-size: 18px;
+      line-height: 21px;
+      color: $black-header;
     }
 
-    &__item {
-        display: flex;
-        position: relative;
-        border-radius: 12px;
-        flex-direction: column;
-        overflow: hidden;
-        margin-bottom: 24px;
-        max-width: 448px;
-        height: 525px;
-        border: 1px solid #E6E1E5;
 
-        img {
-            width: 100%;
-        }
+  }
 
-        p {
-            font-size: 18px;
-            line-height: 21px;
-            color: $black-header;
-        }
+  &__info {
+    position: absolute;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+    bottom: 0%;
 
-
+    p {
+      margin: 0px;
     }
+  }
 
-    &__info {
-        position: absolute;
-        width: 100%;
-        padding: 25px;
-        box-sizing: border-box;
-        background-color: #fff;
-        bottom: 0%;
+  &__slider {
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 
-        p {
-            margin: 0px;
-        }
+    &_wrap {
+      position: relative;
     }
+  }
 
-    &__slider {
-        border-radius: 12px 12px 0 0;
-        overflow: hidden;
+  &__badge {
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -100%;
+    padding: 21px 32px;
+    transition: all .5s ease;
 
-        &_wrap {
-            position: relative;
-        }
+    h6 {
+      font-size: 16px;
+      line-height: 150%;
+      color: $black-header;
     }
-
-    &__badge {
-        position: absolute;
-        background-color: #ffffff;
-        bottom: -100%;
-        padding: 21px 32px;
-       transition: all .5s ease;
-
-        h6 {
-            font-size: 16px;
-            line-height: 150%;
-            color: $black-header;
-        }
-    }
-
+  }
 
 
 }
 
 .franchisee__item:hover .franchisee__badge {
-    bottom: 0%;
+  bottom: 0%;
 }
 
 .franchisee__slider .slick-dots {
-    margin: 0;
-    display: flex;
-    border: 1px solid #E6E1E5;
-    height: 75px;
-    border-radius: 0 0 12px 12px;
-    overflow: hidden;
+  margin: 0;
+  display: flex;
+  border: 1px solid #E6E1E5;
+  height: 75px;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
 }
 
 .franchisee__slider .slick-dots li {
-    width: 25%;
-    border-left: 1px solid #E6E1E5;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    overflow: hidden;
+  width: 25%;
+  border-left: 1px solid #E6E1E5;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 .franchisee__slider .slick-dots li:first-child {
-    width: 25%;
-    border-left: none;
+  width: 25%;
+  border-left: none;
 }
 
 .franchisee__slider .slick-dots button {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 #slick-1 .slick-dots li.slick-active,
 #slick-1 .slick-dots li:hover {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .franchisee__pagination {
-    position: absolute;
-    bottom: 77px;
-    width: 100%;
-    height: 7px;
-    background: #eee;
+  position: absolute;
+  bottom: 77px;
+  width: 100%;
+  height: 7px;
+  background: #eee;
 }
 
 .franchisee__pagination .franchise__progress {
-    width: 0%;
-    height: 7px;
-    background-color: $orange;
+  width: 0%;
+  height: 7px;
+  background-color: $orange;
 }
-
 
 
 @media screen and (max-width: 1440px) {
-    .franchisee {
-        margin-top: 40px;
-        margin-bottom: 60px;
-         p {
-             font-size: 18px;
-         }
+  .franchisee {
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    p {
+      font-size: 18px;
     }
+  }
 
-    .franchisee__wrap {
-        justify-content: center;
-            }
+  .franchisee__wrap {
+    justify-content: center;
+  }
 
-    .franchisee__slider_count {
-        top: 105px !important;
-    }
+  .franchisee__slider_count {
+    top: 105px !important;
+  }
 
-    .franchisee__item {
-        max-width: 320px;
-        height: 400px;
-        margin-right: 20px;
+  .franchisee__item {
+    max-width: 320px;
+    height: 400px;
+    margin-right: 20px;
 
-    }
+  }
 
-    .franchisee__info {
-        padding: 15px;
-    }
+  .franchisee__info {
+    padding: 15px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .franchisee {
-        margin-top: 50px;
-        margin-bottom: 50px;
+  .franchisee {
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-        &__item {
-            max-width: 50%;
-        }
+    &__item {
+      max-width: 50%;
     }
-    .franchisee__wrap {
-        justify-content: space-around;
-    }
+  }
+  .franchisee__wrap {
+    justify-content: space-around;
+  }
 
-    .franchisee p {
-        margin-top: 10px;
-        font-size: 20px;
-        line-height: 150%;
-    }
+  .franchisee p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
-@media screen and (max-width: 768px){
-    .franchisee h3 {
-        width: auto;
-    }
+@media screen and (max-width: 768px) {
+  .franchisee h3 {
+    width: auto;
+  }
 
-    .franchisee__item {
-        max-width: 49%;
-        height: 455px;
-    }
-    .franchisee__wrap {
+  .franchisee__item {
+    max-width: 49%;
+    height: 455px;
+    margin-right: 0;
+  }
+  .franchisee__wrap {
     justify-content: space-between;
-    }
+  }
 
-    .franchisee__info {
-        padding: 15px;
-    }
+  .franchisee__info {
+    padding: 15px;
+  }
 
-    .franchisee__slider .slick-dots li {
-        padding-left: 10px;
-    }
+  .franchisee__slider .slick-dots li {
+    padding-left: 10px;
+  }
 
-    .blog-franchisee__right {
-        position: fixed !important;
-        margin-left: 0 !important;
-        width: 100% !important;
-        bottom: -100%;
-        background-color: #fff;
-    }
+  .blog-franchisee__right {
+    position: fixed !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    bottom: -100%;
+    background-color: #fff;
+  }
 
-    .blog-franchisee__left {
-        width: 100% !important;
-        img {
-            width: 100%;
-        }
-    }
+  .blog-franchisee__left {
+    width: 100% !important;
 
-    .blog-franchisee__slider > .slick-custom-next {
-        top: 50% !important;
-        right: -20px !important;
+    img {
+      width: 100%;
     }
+  }
 
-    .blog-franchisee__slider > .slick-custom-prev {
-        top: 50% !important;
-        left: -20px !important;
-    }
+  .blog-franchisee__slider > .slick-custom-next {
+    top: 50% !important;
+    right: -20px !important;
+  }
+
+  .blog-franchisee__slider > .slick-custom-prev {
+    top: 50% !important;
+    left: -20px !important;
+  }
 
 }
 
 @media screen and (max-width: 425px) {
-    .franchisee {
-        margin-top: 10px;
-        margin-bottom: 35px;
+  .franchisee {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  .franchisee__item {
+    max-width: 100%;
+  }
+
+  .franchisee__slider .slick-dots li.slick-active {
+    display: flex;
+  }
+
+  .franchisee__slider .slick-dots li {
+    width: 100% !important;
+    display: none;
+  }
+
+  .franchisee__slider .slick-dots {
+    height: 45px;
+  }
+
+  .franchisee__pagination {
+    bottom: 47px;
+  }
+
+
+  .franchisee.slick-custom-prev.slick-custom-next {
+    display: none;
+  }
+  .franchisee__wrap {
+    overflow: visible;
+  }
+
+  .franchisee__slider {
+    overflow: visible;
+  }
+
+  .franchisee__slider img {
+    display: block;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+  }
+
+
+  .franchisee__wrap > .slick-custom-next,
+  .franchisee__slider > .slick-custom-next {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background: #FFA626;
+    text-decoration: none;
+    border: none;
+    position: absolute;
+    right: -13px;
+    top: 40%;
+    transform: translateY(52%);
+
+    &:before {
+      content: '';
+      position: absolute;
+      transform: rotate(0deg);
+      top: 7px;
+      left: 10px;
+      width: 6px;
+      height: 11px;
+      background-image: url('../img/next-sl-mob.svg');
     }
-    .franchisee__item {
-        max-width: 100%;
+  }
+
+  .franchisee__wrap > .slick-custom-prev,
+  .franchisee__slider > .slick-custom-prev {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background: #FFA626;
+    text-decoration: none;
+    border: none;
+    position: absolute;
+    left: -13px;
+    top: 40%;
+    transform: translateY(52%);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      width: 6px;
+      height: 10px;
+      transform: rotate(180deg);
+      background-image: url('../img/next-sl-mob.svg');
     }
 
-    .franchisee__slider .slick-dots li.slick-active {
-        display: flex;
-    }
-
-    .franchisee__slider .slick-dots li {
-        width: 100% !important;
-        display: none;
-    }
-
-    .franchisee__slider .slick-dots {
-        height: 45px;
-    }
-
-    .franchisee__pagination {
-        bottom: 47px;
-    }
-
-
-    .franchisee,  .slick-custom-prev.slick-custom-next {
-        display: none;
-    }
-
-
+  }
 }

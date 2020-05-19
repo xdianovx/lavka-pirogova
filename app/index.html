@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>Document</title>
     <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/style.css">
@@ -797,13 +798,13 @@
                 <h5>Сумма, ₽</h5>
                 <h5>% к выручке</h5>
             </div>
-            <ul class="uk-tab vision-table__bottom" data-uk-tab="{connect:'#my-id'}">
+            <ul class="uk-tab vision-table__bottom" uk-switcher="animation: uk-animation-slide-left" data-uk-tab="{connect:'#my-id'} ">
                 <li><a href="/">Операционная прибыль</a></li>
                 <li><a href="/">Чистая прибыль</a></li>
             </ul>
 
 
-            <ul id="my-id" class="uk-switcher">
+            <ul id="my-id" class="uk-switcher" >
                 <li>
                     <div class="vision-table__wrapper">
                         <ul class="vision-table__accordion">
@@ -1651,7 +1652,6 @@
         <div class="vision-video__subtitle">Видео с производства и кассовой зоны</div>
     </div>
 </section>
-
 <!--vision end-->
 
 <!--blog start-->
@@ -1670,7 +1670,6 @@
                 Слежу за обратной связью собираемых Партнером с покупателей, при данном взаимодействии достигаем
                 наивысшей удовлетворенности продуктом/Слежу за обратной связью собираемых Партнером/</p>
 
-            <a href="/" class="">Читать полностью</a>
         </div>
     </div>
 
@@ -1689,7 +1688,7 @@
                 получали лучший продукт за лучшие деньги. Слежу за обратной связью собираемых Партнером с покупателей,
                 при данном взаимодействии достигаем наивысшей удовлетворенности продуктом</p>
 
-            <a href="/" class="">Читать полностью</a>
+<!--            <a href="/" class="">Читать полностью</a>-->
         </div>
     </div>
 
@@ -1864,12 +1863,13 @@
                     <div class="slide" data-title="Знакомство с предложением">
                         <div class="stages-slider__wrap">
                             <div class="stages__wrap_item">
-                                <img src="img/stages-1.svg" alt="">
+                                <img class="stages__item_desc" src="img/stages-1.svg" alt="">
+                                <img class="stages__item_mob" src="img/stages-1-mob.svg" alt="">
 
                                 <p class="stages__p stages__p_first stages__p_active" >Подайте заявку на сайте Лавка Пирогова</p>
-                                <p class="stages__p stages__p_second">Подбираем место под пекарню, рассчитываем окупаемость проекта</p>
-                                <p class="stages__p stages__p_third">Подписываете договор на выбранный формат пекарни</p>
-                                <p class="stages__p stages__p_fourth">Проходите обучение в учебном центре, оплата Паушального взноса</p>
+                                <p class="stages__p stages__p_second stages__p-mob">Подбираем место под пекарню, рассчитываем окупаемость проекта</p>
+                                <p class="stages__p stages__p_third stages__p-mob">Подписываете договор на выбранный формат пекарни</p>
+                                <p class="stages__p stages__p_fourth stages__p-mob">Проходите обучение в учебном центре, оплата Паушального взноса</p>
 
                             </div>
                         </div>
@@ -1878,12 +1878,13 @@
                     <div class="slide" data-title="Решение принято">
                         <div class="stages-slider__wrap">
                             <div class="stages__wrap_item">
-                                <img src="img/stages-2.svg" alt="">
+                                <img class="stages__item_desc" src="img/stages-2.svg" alt="">
+                                <img class="stages__item_mob" src="img/stages-2-mob.svg" alt="">
 
-                                <p class="stages__p stages__p_first stages__p_active" >Подайте заявку на сайте Лавка Пирогова</p>
+                                <p class="stages__p stages__p_first stages__p_active stages__p-mob" >Подайте заявку на сайте Лавка Пирогова</p>
                                 <p class="stages__p stages__p_second stages__p_active">Подбираем место под пекарню, рассчитываем окупаемость проекта</p>
-                                <p class="stages__p stages__p_third">Подписываете договор на выбранный формат пекарни</p>
-                                <p class="stages__p stages__p_fourth">Проходите обучение в учебном центре, оплата Паушального взноса</p>
+                                <p class="stages__p stages__p_third stages__p-mob">Подписываете договор на выбранный формат пекарни</p>
+                                <p class="stages__p stages__p_fourth stages__p-mob">Проходите обучение в учебном центре, оплата Паушального взноса</p>
 
                             </div>
                         </div>
@@ -1893,12 +1894,13 @@
                         <div class="stages-slider__wrap">
                             <div class="stages__wrap_item">
 
-                                <img src="img/stages-3.svg" alt="">
+                                <img class="stages__item_desc" src="img/stages-3.svg" alt="">
+                                <img class="stages__item_mob" src="img/stages-3-mob.svg" alt="">
 
-                                <p class="stages__p stages__p_first stages__p_active" >Подайте заявку на сайте Лавка Пирогова</p>
-                                <p class="stages__p stages__p_second stages__p_active">Подбираем место под пекарню, рассчитываем окупаемость проекта</p>
+                                <p class="stages__p stages__p_first stages__p_active stages__p-mob" >Подайте заявку на сайте Лавка Пирогова</p>
+                                <p class="stages__p stages__p_second stages__p_active stages__p-mob">Подбираем место под пекарню, рассчитываем окупаемость проекта</p>
                                 <p class="stages__p stages__p_third stages__p_active">Подписываете договор на выбранный формат пекарни</p>
-                                <p class="stages__p stages__p_fourth">Проходите обучение в учебном центре, оплата Паушального взноса</p>
+                                <p class="stages__p stages__p_fourth stages__p-mob">Проходите обучение в учебном центре, оплата Паушального взноса</p>
 
                             </div>
                         </div>
@@ -1907,11 +1909,11 @@
                     <div class="slide" data-title="Организация и настройка">
                         <div class="stages-slider__wrap">
                             <div class="stages__wrap_item">
-                                <img src="img/stages-4.svg" alt="">
-
-                                <p class="stages__p stages__p_first stages__p_active" >Подайте заявку на сайте Лавка Пирогова</p>
-                                <p class="stages__p stages__p_second stages__p_active">Подбираем место под пекарню, рассчитываем окупаемость проекта</p>
-                                <p class="stages__p stages__p_third stages__p_active">Подписываете договор на выбранный формат пекарни</p>
+                                <img class="stages__item_desc" src="img/stages-4.svg" alt="">
+                                <img class="stages__item_mob" src="img/stages-4-mob.svg" alt="">
+                                <p class="stages__p stages__p_first stages__p_active stages__p-mob" >Подайте заявку на сайте Лавка Пирогова</p>
+                                <p class="stages__p stages__p_second stages__p_active stages__p-mob">Подбираем место под пекарню, рассчитываем окупаемость проекта</p>
+                                <p class="stages__p stages__p_third stages__p_active stages__p-mob">Подписываете договор на выбранный формат пекарни</p>
                                 <p class="stages__p stages__p_fourth stages__p_active">Проходите обучение в учебном центре, оплата Паушального взноса</p>
 
                             </div>
@@ -1935,11 +1937,11 @@
 <section class="city-check">
     <div class="container">
         <div class="city-check__item">
-            <form class="city-check__item_left" method="POST">
+            <form class="city-check__item_left" action="#">
                 <h3>Проверьте свой город</h3>
                 <p>Мы ищем партнеров по всей России и всегда рады новых решениям</p>
                 <input type="text" placeholder="Ваш город">
-                <button href="#modal-cities" class="button" type="submit" uk-toggle>Отправить заявку</button>
+                <button href="#modal-cities" class="button" type="" uk-toggle>Отправить заявку</button>
 
 
                 <div id="modal-cities" city-check__modal uk-modal>
@@ -1948,14 +1950,13 @@
                         <p>Свяжитесь с нами удобным для вас способом и получите пошаговую инструкцию для начала
                             сотрудничества</p>
 
-                        <form action="/" class="city-check__modal_form">
+                        <form action="" class="city-check__modal_form">
                             <div class="city-check__modal_checkbox_wrap">
                                 <div class="city-check__modal_checkbox">
-                                    <label for="modal-tg">Telegram</label>
-                                    <input type="radio" id="modal-tg" name="modal-radio" checked>
-                                </div>
 
-                                <div class="city-check__modal_checkbox">
+                                    <label for="modal-tg">Telegram</label>
+                                    <input type="radio" id="modal-tg" name="modal-radio">
+
                                     <label for="modal-email">E-mail</label>
                                     <input type="radio" id="modal-email" name="modal-radio">
                                 </div>
@@ -2052,10 +2053,14 @@
         </div>
     </div>
 </footer>
-<!--footer end-->,
+<!--footer end-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/uikit.min.js"></script>
+
+<script src="js/readmore.min.js"></script>
+<!--<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.4.6/js/uikit.min.js"></script>
 <script src="js/libs.min.js"></script>
+<!--<script src="js/uikit.min.js"></script>-->
 <script src="js/main.js"></script>
 </body>
 </html>

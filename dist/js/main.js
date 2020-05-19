@@ -17,7 +17,6 @@ $(document).ready(function () {
     });
 
 
-
     $('.sl-count__total').text(sliderU.slick.slideCount);
 
     sliderU.on('afterChange', function (event, slick, currentSlide) {
@@ -28,9 +27,9 @@ $(document).ready(function () {
 
     $('.formats__slider').each(function () {
 
-      $(this).slick({
-          prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
-          nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
+        $(this).slick({
+            prevArrow: '<button id="prev" type="button" class="btn slick-custom-prev"></button>',
+            nextArrow: '<button id="next" type="button" class="btn slick-custom-next"></button>'
 
         });
 
@@ -127,28 +126,7 @@ $(document).ready(function () {
         });
 
 
-
     });
-
-
-    $('a[href^="#"], *[data-href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        var t = 1000;
-        var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-        $('html,body').stop().animate({scrollTop: $(d).offset().top - 250}, t);
-
-    });
-});
-
-
-$(document).ready(function () {
-    var time = 10;
-    var $bar,
-        $slickProg,
-        isPause,
-        tick,
-        percentTime;
-
 
     $(".progress__wrap").slick({
 
@@ -173,6 +151,36 @@ $(document).ready(function () {
             }
         ]
     });
+    // scroll
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        $('a[href^="#"], *[data-href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            var t = 1000;
+            var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+            $('html,body').stop().animate({scrollTop: $(d).offset().top - 80}, t);
+
+        });
+    } else {
+
+        $('a[href^="#"], *[data-href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            var t = 1000;
+            var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+            $('html,body').stop().animate({scrollTop: $(d).offset().top - 150}, t);
+
+        });
+    }
+});
+
+
+$(document).ready(function () {
+    var time = 10;
+    var $bar,
+        $slickProg,
+        isPause,
+        tick,
+        percentTime;
+
 
     $slickProg = $('.progress__wrap');
     $bar = $(' .progress__progress');
@@ -199,7 +207,7 @@ $(document).ready(function () {
             $bar.css({
                 width: percentTime + "%"
             });
-            if (percentTime >= 100) {
+            if (percentTime >= 25) {
                 $slickProg.slick('slickNext');
                 startProgressbar();
             }
@@ -246,4 +254,18 @@ $(document).ready(function () {
     });
 
 
+    $('.blog__right p').readmore({
+        speed: 150,
+        maxHeight: 110,
+        moreLink: '<a href="#">Читать полностью</a>',
+        lessLink: '<a href="#">Свернуть</a>',
+    });
+
+    $('.blog-second__right p').readmore({
+        speed: 150,
+        maxHeight: 100,
+        moreLink: '<a href="#">Читать полностью</a>',
+        lessLink: '<a href="#">Свернуть</a>',
+    });
 });
+
